@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="muted"><a href="index.html">All states</a> · Static snapshot · <a href="{{ C.APP_URL }}?state={{ s.abbr }}">Open in the interactive app</a></p>
+<h1>{{ s.name }}: traffic fatality snapshot</h1>
+<p class="lead">FARS final data {{ years[0] }}-{{ years[-1] }}. Comparisons pool {{ s.window_label }}. Peers (most similar rural share of VMT and VMT per capita): {{ peers }}.</p>
+
+<section class="grid kpis" aria-label="Headline numbers">
+  <div class="card kpi"><div class="label">Fatalities, {{ latest.year }}</div><div class="value">{{ "{:,.0f}".format(latest.count) }}</div><div class="sub">{{ "{:+,.0f}".format(latest.count - prev.count) }} vs {{ latest.year - 1 }}</div></div>
+  <div class="card kpi"><div class="label">Per 100,000 population, {{ s.window_label }}</div><div class="value">{{ "%.1f"|format(tot.rate_per_100k) }}</div><div class="sub">U.S. {{ "%.1f"|format(tot.national_rate_per_100k) }} · median of states {{ "%.1f"|format(tot.state_median_rate_per_100k) }}</div></div>
+  <div class="card kpi"><div class="label">Per 100 million VMT, {{ s.window_label }}</div><div class="value">{{ "%.2f"|format(tot.rate_per_100m_vmt) }}</div><div class="sub">U.S. {{ "%.2f"|format(tot.national_rate_per_100m_vmt) }} · median of states {{ "%.2f"|format(tot.state_median_rate_per_100m_vmt) }}</div></div>
+  <div class="card kpi"><div class="label">Signals triggered</div><div class="value">{{ n_trig }} of {{ signals|length }}</div><div class="sub">{{ linked|length }} linked published resources</div></div>
+</section>
+
+<h2>Trend: all traffic fatalities per 100,000 population</h2>
+<div class="card chart-scroll">{{ trend_svg }}</div>
+<details><summary>Trend data table</summary><div class="table-wrap"><table>
+<thead><tr><th>Year</th><th class="num">{{ s.abbr }} deaths</th><th class="num">{{ s.abbr }} per 100k</th><th class="num">U.S. per 100k</th><th class="num">{{ s.abbr }} per 100M VMT</th><th class="num">U.S. per 100M VMT</th></tr></thead>
+<tbody>{% for r in trend_rows %}<tr><td>{{ r.year }}</td><td class="num">{{ "{:,.0f}".format(r.count) }}</td><td class="num">{{ "%.2f"|format(r.rate) }}</td><td class="num">{{ "%.2f"|format(r.us_rate) }}</td><td class="num">{{ "%.2f"|format(r.vmt_rate) }}</td><td class="num">{{ "%.2f"|format(r.us_vmt_rate) }}</td></tr>{% endfor %}</tbody>
+</table></div></details>
+
+<h2>Measures vs. national and peers ({{ s.window_label }}, pooled)</h2>
+<div class="card chart-scroll">{{ dot_svg }}</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Measure</th><th class="num">Deaths/yr</th><th class="num">Per 100k</th><th class="num">U.S.</th><th class="num">Median of states</th><th class="num">Peer median</th><th class="num">Per 100M VMT</th><th class="num">U.S.</th><th class="num">Change vs {{ prior_label }}</th></tr></thead>
+<tbody>{% for r in measures %}<tr><td>{{ r.label }}{% if r.low_count_flag %} <span class="muted">(&lt;20 deaths)</span>{% endif %}</td><td class="num">{{ "%.1f"|format(r.count_annual_avg) }}</td><td class="num">{{ "%.2f"|format(r.rate_per_100k) }}</td><td class="num">{{ "%.2f"|format(r.national_rate_per_100k) }}</td><td class="num">{{ "%.2f"|format(r.state_median_rate_per_100k) }}</td><td class="num">{{ "%.2f"|format(r.peer_median_rate_per_100k) }}</td><td class="num">{{ fmt2(r.rate_per_100m_vmt) }}</td><td class="num">{{ fmt2(r.national_rate_per_100m_vmt) }}</td><td class="num">{{ pct(r.pct_change_rate_per_100k) }}</td></tr>{% endfor %}</tbody>
+</table></div>
+<p class="muted">Rural and urban rates per 100M VMT use rural and urban VMT; function-class rates below use that class's VMT.</p>
+<details><summary>Roadway function class</summary><div class="table-wrap"><table>
+<thead><tr><th>Function class</th><th class="num">Deaths/yr</th><th class="num">Per 100M VMT on class</th><th class="num">U.S.</th><th class="num">Median of states</th></tr></thead>
+<tbody>{% for r in fc %}<tr><td>{{ r.label }}</td><td class="num">{{ "%.1f"|format(r.count_annual_avg) }}</td><td class="num">{{ fmt2(r.rate_per_100m_vmt) }}</td><td class="num">{{ fmt2(r.national_rate_per_100m_vmt) }}</td><td class="num">{{ fmt2(r.state_median_rate_per_100m_vmt) }}</td></tr>{% endfor %}</tbody>
+</table></div></details>
+
+<h2>Post-crash care signal: EMS times ({{ s.window_label }})</h2>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th class="num">Median crash → EMS at scene (min)</th><th class="num">Usable</th><th class="num">Median crash → hospital (min)</th><th class="num">Usable</th></tr></thead>
+<tbody>{% for label, e in ems %}<tr><td>{{ label }}</td><td class="num">{{ fmt1(e.median_minutes_to_scene) }}</td><td class="num">{{ "%.0f"|format(e.pct_crashes_scene_time_valid) }}%</td><td class="num">{{ fmt1(e.median_minutes_to_hospital) }}</td><td class="num">{{ "%.0f"|format(e.pct_crashes_hospital_time_valid) }}%</td></tr>{% endfor %}</tbody>
+</table></div>
+
+<h2>Data-quality notes</h2>
+<ul>{% for n in notes %}<li>{{ n }}</li>{% endfor %}</ul>
+
+<h2>What the data suggest looking at</h2>
+<p class="muted">{{ C.SIGNAL_EXPLAINER }} <a href="../methods.html#4-signal-rules-resources">How rules work</a>.</p>
+{% for r in signals %}
+<div class="signal {% if r.triggered %}on{% endif %}"><span class="badge">{% if r.triggered %}Signal{% elif r.evaluable %}No signal{% else %}Not evaluated{% endif %}</span><span>{{ sentence(r) }}</span></div>
+{% endfor %}
+
+<h3>Linked published resources ({{ linked|length }})</h3>
+<p class="muted">{{ C.SORT_RULE }}</p>
+{% for element, items in groups %}
+<details class="card" {% if loop.first %}open{% endif %}><summary>{{ element }} ({{ items|length }})</summary>
+{% for a in items %}{% include "_action.html" %}{% endfor %}
+</details>
+{% else %}
+<p>No signals triggered; see the <a href="../actions.html">full action library</a>.</p>
+{% endfor %}
+{% endblock %}

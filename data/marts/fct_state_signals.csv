@@ -1,0 +1,613 @@
+state_fips,rule_id,rule_order,label,measure_id,metric,comparator,operator,min_n,window_start,window_end,value,n,comparator_value,national_value,state_median,peer_median,evaluable,triggered
+1,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.3646,2945.0,1.2764,1.3261,1.2764,1.6115,true,true
+1,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.3943,365.0,1.7362,2.2366,1.7362,2.5152,true,true
+1,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2033,31.0,0.2275,0.3257,0.2275,0.3408,true,false
+1,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.7777,271.0,1.8927,1.8708,1.8927,2.0321,true,false
+1,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.9197,750.0,3.5287,3.6464,3.5287,4.552,true,true
+1,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.4537,831.4,3.8541,3.9326,3.8541,5.2733,true,true
+1,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,7.1959,1097.0,3.7429,3.3674,3.7429,6.2989,true,true
+1,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.5779,393.0,1.6744,1.6547,1.6744,2.5219,true,true
+1,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.634,554.0,2.8352,2.5296,2.8352,3.6535,true,true
+1,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7826,1689.0,0.6537,0.6407,0.6537,0.7938,true,true
+1,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2271,490.0,0.3006,0.3315,0.3006,0.2948,true,false
+1,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,57.0,966.0,40.0,40.0,40.0,47.5,true,true
+2,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2643,213.0,1.2764,1.3261,1.2764,1.2642,true,false
+2,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.952,43.0,1.7362,2.2366,1.7362,1.3842,true,true
+2,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1816,4.0,0.2275,0.3257,0.2275,0.1666,false,false
+2,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.0441,23.0,1.8927,1.8708,1.8927,1.992,true,false
+2,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.7224,82.0,3.5287,3.6464,3.5287,3.7144,true,true
+2,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.7464,60.5,3.8541,3.9326,3.8541,3.4203,true,false
+2,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.9974,44.0,3.7429,3.3674,3.7429,2.6429,true,false
+2,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.3164,29.0,1.6744,1.6547,1.6744,1.2391,true,false
+2,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0428,45.0,2.8352,2.5296,2.8352,2.4605,true,false
+2,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6885,116.0,0.6537,0.6407,0.6537,0.6537,true,true
+2,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.273,46.0,0.3006,0.3315,0.3006,0.3006,true,false
+2,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,35.0,75.0,40.0,40.0,40.0,40.0,true,false
+4,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6961,3820.0,1.2764,1.3261,1.2764,1.4558,true,true
+4,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,3.6975,817.0,1.7362,2.2366,1.7362,2.6701,true,true
+4,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.6336,140.0,0.2275,0.3257,0.2275,0.3185,true,true
+4,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,3.0141,666.0,1.8927,1.8708,1.8927,1.8648,true,true
+4,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,5.7476,1270.0,3.5287,3.6464,3.5287,3.6781,true,true
+4,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,6.0173,1329.6,3.8541,3.9326,3.8541,4.0415,true,true
+4,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.8197,844.0,3.7429,3.3674,3.7429,3.5174,true,true
+4,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.4258,536.0,1.6744,1.6547,1.6744,2.0606,true,true
+4,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.5798,791.0,2.8352,2.5296,2.8352,2.5544,true,true
+4,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6043,1361.0,0.6537,0.6407,0.6537,0.6086,true,false
+4,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.504,1135.0,0.3006,0.3315,0.3006,0.3434,true,true
+4,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,30.0,995.0,40.0,40.0,40.0,36.0,true,false
+5,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6587,1925.0,1.2764,1.3261,1.2764,1.2764,true,true
+5,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.5152,230.0,1.7362,2.2366,1.7362,2.0045,true,true
+5,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2953,27.0,0.2275,0.3257,0.2275,0.3408,true,true
+5,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,3.0948,283.0,1.8927,1.8708,1.8927,2.0321,true,true
+5,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.4617,408.0,3.5287,3.6464,3.5287,4.7265,true,true
+5,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.3497,489.2,3.8541,3.9326,3.8541,4.6131,true,true
+5,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.2989,576.0,3.7429,3.3674,3.7429,5.6039,true,true
+5,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.7448,251.0,1.6744,1.6547,1.6744,2.3503,true,true
+5,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.3961,402.0,2.8352,2.5296,2.8352,3.2687,true,true
+5,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9857,1144.0,0.6537,0.6407,0.6537,0.6899,true,true
+5,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2619,304.0,0.3006,0.3315,0.3006,0.2948,true,false
+5,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,48.0,325.0,40.0,40.0,40.0,46.0,true,true
+6,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.4025,13221.0,1.2764,1.3261,1.2764,1.2635,true,true
+6,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,3.0155,3542.0,1.7362,2.2366,1.7362,1.7362,true,true
+6,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3984,468.0,0.2275,0.3257,0.2275,0.2925,true,true
+6,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.5818,1858.0,1.8927,1.8708,1.8927,1.7851,true,false
+6,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.7374,4390.0,3.5287,3.6464,3.5287,3.5058,true,true
+6,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.5503,4170.2,3.8541,3.9326,3.8541,3.3782,true,false
+6,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.1871,2569.0,3.7429,3.3674,3.7429,2.1715,true,false
+6,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.3332,1566.0,1.6744,1.6547,1.6744,1.2965,true,false
+6,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.6278,1912.0,2.8352,2.5296,2.8352,1.7929,true,false
+6,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5833,5499.0,0.6537,0.6407,0.6537,0.5836,true,false
+6,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3615,3408.0,0.3006,0.3315,0.3006,0.3169,true,true
+6,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,25.0,30.0,40.0,40.0,40.0,37.0,true,false
+8,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.339,2175.0,1.2764,1.3261,1.2764,1.1576,true,true
+8,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.8487,325.0,1.7362,2.2366,1.7362,1.7215,true,true
+8,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2844,50.0,0.2275,0.3257,0.2275,0.2952,true,true
+8,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.3948,421.0,1.8927,1.8708,1.8927,1.8648,true,true
+8,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.2662,750.0,3.5287,3.6464,3.5287,3.6781,true,true
+8,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.9005,685.7,3.8541,3.9326,3.8541,4.0415,true,true
+8,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.7429,658.0,3.7429,3.3674,3.7429,3.4959,true,false
+8,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.9454,342.0,1.6744,1.6547,1.6744,1.4661,true,true
+8,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.2184,390.0,2.8352,2.5296,2.8352,2.5544,true,false
+8,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6575,1068.0,0.6537,0.6407,0.6537,0.643,true,true
+8,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4076,662.0,0.3006,0.3315,0.3006,0.3368,true,true
+8,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,26.0,687.0,40.0,40.0,40.0,35.0,true,false
+9,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0958,977.0,1.2764,1.3261,1.2764,1.0252,true,false
+9,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.6103,175.0,1.7362,2.2366,1.7362,2.2516,true,false
+9,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1012,11.0,0.2275,0.3257,0.2275,0.2432,false,false
+9,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.7851,194.0,1.8927,1.8708,1.8927,1.3359,true,false
+9,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.5058,381.0,3.5287,3.6464,3.5287,2.8711,true,false
+9,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.3052,359.2,3.8541,3.9326,3.8541,3.0359,true,false
+9,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.1715,236.0,3.7429,3.3674,3.7429,2.1871,true,false
+9,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.1686,127.0,1.6744,1.6547,1.6744,0.9804,true,false
+9,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.5182,165.0,2.8352,2.5296,2.8352,1.5675,true,false
+9,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5485,489.0,0.6537,0.6407,0.6537,0.4628,true,false
+9,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2456,219.0,0.3006,0.3315,0.3006,0.3005,true,false
+9,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,35.0,376.0,40.0,40.0,40.0,34.0,true,false
+10,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.4558,433.0,1.2764,1.3261,1.2764,1.339,true,true
+10,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.8424,87.0,1.7362,2.2366,1.7362,1.8487,true,true
+10,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.4247,13.0,0.2275,0.3257,0.2275,0.2946,false,false
+10,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.9603,60.0,1.8927,1.8708,1.8927,1.9244,true,true
+10,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.7701,146.0,3.5287,3.6464,3.5287,4.2662,true,true
+10,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.0415,123.7,3.8541,3.9326,3.8541,4.1296,true,true
+10,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.4959,107.0,3.7429,3.3674,3.7429,3.7429,true,false
+10,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.4504,75.0,1.6744,1.6547,1.6744,1.9454,true,true
+10,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2018,98.0,2.8352,2.5296,2.8352,2.346,true,true
+10,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6086,181.0,0.6537,0.6407,0.6537,0.643,true,false
+10,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4707,140.0,0.3006,0.3315,0.3006,0.3434,true,true
+10,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,29.0,253.0,40.0,40.0,40.0,35.0,true,false
+11,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1528,117.0,1.2764,1.3261,1.2764,0.9871,true,false
+11,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.3684,48.0,1.7362,2.2366,1.7362,1.6103,true,true
+11,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.4441,9.0,0.2275,0.3257,0.2275,0.2275,false,false
+11,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,0.9375,19.0,1.8927,1.8708,1.8927,1.183,false,false
+11,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.3684,48.0,3.5287,3.6464,3.5287,2.3356,true,false
+11,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,1.8898,38.3,3.8541,3.9326,3.8541,2.1627,true,false
+11,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.0855,22.0,3.7429,3.3674,3.7429,1.5486,true,false
+11,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.296,6.0,1.6744,1.6547,1.6744,0.6673,false,false
+11,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.5428,11.0,2.8352,2.5296,2.8352,1.5182,false,false
+11,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3054,31.0,0.6537,0.6407,0.6537,0.4593,true,false
+11,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5518,56.0,0.3006,0.3315,0.3006,0.2456,true,true
+11,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,33.5,36.0,40.0,40.0,40.0,36.0,true,false
+12,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.5579,10664.0,1.2764,1.3261,1.2764,1.3874,true,true
+12,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,3.5323,2373.0,1.7362,2.2366,1.7362,2.6701,true,true
+12,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.972,653.0,0.2275,0.3257,0.2275,0.2946,true,true
+12,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.9905,2009.0,1.8927,1.8708,1.8927,1.8648,true,true
+12,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,1.7133,1151.0,3.5287,3.6464,3.5287,3.4984,true,false
+12,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.1831,2810.2,3.8541,3.9326,3.8541,4.2874,true,true
+12,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.5174,2363.0,3.7429,3.3674,3.7429,3.8197,true,false
+12,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.081,1398.0,1.6744,1.6547,1.6744,1.9185,true,true
+12,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.4609,2325.0,2.8352,2.5296,2.8352,2.346,true,true
+12,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5214,3569.0,0.6537,0.6407,0.6537,0.6043,true,false
+12,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5345,3659.0,0.3006,0.3315,0.3006,0.3163,true,true
+12,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,0.0,40.0,40.0,40.0,38.0,false,false
+13,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.3874,5215.0,1.2764,1.3261,1.2764,1.5902,true,true
+13,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.9341,962.0,1.7362,2.2366,1.7362,3.4585,true,true
+13,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2074,68.0,0.2275,0.3257,0.2275,0.4599,true,false
+13,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.8697,613.0,1.8927,1.8708,1.8927,2.9905,true,false
+13,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.4984,1147.0,3.5287,3.6464,3.5287,3.3942,true,false
+13,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.2874,1405.7,3.8541,3.9326,3.8541,5.1069,true,true
+13,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.697,1540.0,3.7429,3.3674,3.7429,3.8197,true,true
+13,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.9185,629.0,1.6744,1.6547,1.6744,2.4258,true,true
+13,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.8914,948.0,2.8352,2.5296,2.8352,3.5798,true,true
+13,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6826,2566.0,0.6537,0.6407,0.6537,0.6043,true,true
+13,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3163,1189.0,0.3006,0.3315,0.3006,0.3779,true,true
+13,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,44.0,2204.0,40.0,40.0,40.0,36.0,true,true
+15,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9871,303.0,1.2764,1.3261,1.2764,1.2635,true,false
+15,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.7362,75.0,1.7362,2.2366,1.7362,1.5785,true,false
+15,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.4398,19.0,0.2275,0.3257,0.2275,0.2275,false,false
+15,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.1529,93.0,1.8927,1.8708,1.8927,1.3071,true,true
+15,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.403,147.0,3.5287,3.6464,3.5287,3.128,true,false
+15,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.3613,102.0,3.8541,3.9326,3.8541,3.3782,true,false
+15,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.1806,51.0,3.7429,3.3674,3.7429,2.0368,true,false
+15,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.5787,25.0,1.6744,1.6547,1.6744,1.2965,true,false
+15,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.6899,73.0,2.8352,2.5296,2.8352,1.6278,true,false
+15,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4593,141.0,0.6537,0.6407,0.6537,0.5833,true,false
+15,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2085,64.0,0.3006,0.3315,0.3006,0.3169,true,false
+15,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,39.0,160.0,40.0,40.0,40.0,35.0,true,false
+16,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.3114,763.0,1.2764,1.3261,1.2764,1.2862,true,true
+16,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.1687,68.0,1.7362,2.2366,1.7362,1.2802,true,false
+16,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2406,14.0,0.2275,0.3257,0.2275,0.2039,false,false
+16,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.6843,98.0,1.8927,1.8708,1.8927,1.8927,true,false
+16,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.8703,167.0,3.5287,3.6464,3.5287,2.8941,true,false
+16,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.6935,214.9,3.8541,3.9326,3.8541,3.8541,true,false
+16,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.6405,270.0,3.7429,3.3674,3.7429,4.3878,true,true
+16,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0281,118.0,1.6744,1.6547,1.6744,1.7889,true,true
+16,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.8015,163.0,2.8352,2.5296,2.8352,3.2515,true,false
+16,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7339,427.0,0.6537,0.6407,0.6537,0.7401,true,true
+16,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3094,180.0,0.3006,0.3315,0.3006,0.3278,true,true
+16,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,38.0,19.0,40.0,40.0,40.0,42.0,false,false
+17,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2635,3843.0,1.2764,1.3261,1.2764,1.2642,true,false
+17,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.5785,599.0,1.7362,2.2366,1.7362,1.8186,true,false
+17,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2925,111.0,0.2275,0.3257,0.2275,0.367,true,true
+17,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.3071,496.0,1.8927,1.8708,1.8927,1.7611,true,false
+17,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.5287,1339.0,3.5287,3.6464,3.5287,3.6908,true,false
+17,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.3782,1281.9,3.8541,3.9326,3.8541,3.4972,true,false
+17,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.269,861.0,3.7429,3.3674,3.7429,2.1871,true,false
+17,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.51,573.0,1.6744,1.6547,1.6744,1.2965,true,false
+17,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.153,817.0,2.8352,2.5296,2.8352,1.7929,true,false
+17,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5836,1775.0,0.6537,0.6407,0.6537,0.6388,true,false
+17,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3755,1142.0,0.3006,0.3315,0.3006,0.3169,true,true
+17,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,3.0,40.0,40.0,40.0,38.0,false,false
+18,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0835,2812.0,1.2764,1.3261,1.2764,1.6115,true,false
+18,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.5679,322.0,1.7362,2.2366,1.7362,2.7003,true,false
+18,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3408,70.0,0.2275,0.3257,0.2275,0.2953,true,true
+18,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.0256,416.0,1.8927,1.8708,1.8927,2.6889,true,true
+18,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.8759,796.0,3.5287,3.6464,3.5287,5.2935,true,true
+18,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.7405,768.2,3.8541,3.9326,3.8541,5.3497,true,false
+18,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.4279,704.0,3.7429,3.3674,3.7429,6.2989,true,false
+18,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.9428,399.0,1.6744,1.6547,1.6744,2.6584,true,true
+18,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.8875,593.0,2.8352,2.5296,2.8352,3.8097,true,true
+18,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5367,1393.0,0.6537,0.6407,0.6537,0.8775,true,false
+18,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2948,765.0,0.3006,0.3315,0.3006,0.3186,true,false
+18,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,2.0,40.0,40.0,40.0,45.5,false,false
+19,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0818,1071.0,1.2764,1.3261,1.2764,1.0854,true,false
+19,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.7696,74.0,1.7362,2.2366,1.7362,1.1687,true,false
+19,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.208,20.0,0.2275,0.3257,0.2275,0.1181,true,false
+19,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.8927,182.0,1.8927,1.8708,1.8927,1.6843,true,false
+19,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.5479,245.0,3.5287,3.6464,3.5287,2.8703,true,false
+19,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.8541,370.6,3.8541,3.9326,3.8541,3.5206,true,false
+19,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.0783,296.0,3.7429,3.3674,3.7429,4.3878,true,false
+19,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.6744,161.0,1.6744,1.6547,1.6744,1.7889,true,false
+19,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.8079,270.0,2.8352,2.5296,2.8352,3.0437,true,false
+19,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5939,588.0,0.6537,0.6407,0.6537,0.7407,true,false
+19,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2586,256.0,0.3006,0.3315,0.3006,0.3094,true,false
+19,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,39.5,360.0,40.0,40.0,40.0,42.0,true,false
+20,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2862,1220.0,1.2764,1.3261,1.2764,1.3638,true,true
+20,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.2802,113.0,1.7362,2.2366,1.7362,2.1282,true,false
+20,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2039,18.0,0.2275,0.3257,0.2275,0.2769,false,false
+20,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.6087,142.0,1.8927,1.8708,1.8927,2.1342,true,false
+20,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.0589,270.0,3.5287,3.6464,3.5287,3.24,true,false
+20,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.9754,350.9,3.8541,3.9326,3.8541,4.0944,true,true
+20,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.6223,408.0,3.7429,3.3674,3.7429,4.6729,true,true
+20,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.1525,190.0,1.6744,1.6547,1.6744,1.96,true,true
+20,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2515,287.0,2.8352,2.5296,2.8352,3.192,true,true
+20,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7401,702.0,0.6537,0.6407,0.6537,0.7624,true,true
+20,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3416,324.0,0.3006,0.3315,0.3006,0.3278,true,true
+20,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,44.0,589.0,40.0,40.0,40.0,42.0,true,true
+21,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6286,2364.0,1.2764,1.3261,1.2764,1.0854,true,true
+21,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.1282,289.0,1.7362,2.2366,1.7362,1.016,true,true
+21,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2946,40.0,0.2275,0.3257,0.2275,0.2039,true,true
+21,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.3491,319.0,1.8927,1.8708,1.8927,1.7442,true,true
+21,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.8941,393.0,3.5287,3.6464,3.5287,3.0589,true,false
+21,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.0944,556.0,3.8541,3.9326,3.8541,3.8541,true,true
+21,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,5.8912,800.0,3.7429,3.3674,3.7429,4.3878,true,true
+21,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0914,284.0,1.6744,1.6547,1.6744,1.7889,true,true
+21,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.1901,569.0,2.8352,2.5296,2.8352,2.8352,true,true
+21,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.939,1363.0,0.6537,0.6407,0.6537,0.6007,true,true
+21,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3527,512.0,0.3006,0.3315,0.3006,0.3278,true,true
+21,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,42.0,1339.0,40.0,40.0,40.0,42.0,true,true
+22,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6115,2688.0,1.2764,1.3261,1.2764,1.3638,true,true
+22,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,3.6881,510.0,1.7362,2.2366,1.7362,2.2991,true,true
+22,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.8244,114.0,0.2275,0.3257,0.2275,0.2769,true,true
+22,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.0321,281.0,1.8927,1.8708,1.8927,2.4784,true,true
+22,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,5.2935,732.0,3.5287,3.6464,3.5287,4.9248,true,true
+22,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.7766,798.8,3.8541,3.9326,3.8541,4.646,true,true
+22,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.3782,882.0,3.7429,3.3674,3.7429,5.5422,true,true
+22,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.3503,325.0,1.6744,1.6547,1.6744,2.5219,true,true
+22,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2687,452.0,2.8352,2.5296,2.8352,3.6535,true,true
+22,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7938,1324.0,0.6537,0.6407,0.6537,0.7624,true,true
+22,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3363,561.0,0.3006,0.3315,0.3006,0.2948,true,true
+22,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,49.0,815.0,40.0,40.0,40.0,40.0,true,true
+23,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0658,470.0,1.2764,1.3261,1.2764,1.3114,true,false
+23,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.414,59.0,1.7362,2.2366,1.7362,1.1687,true,false
+23,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.0959,4.0,0.2275,0.3257,0.2275,0.208,false,false
+23,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.6537,69.0,1.8927,1.8708,1.8927,2.3502,true,false
+23,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.828,118.0,3.5287,3.6464,3.5287,3.552,true,false
+23,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.5206,146.9,3.8541,3.9326,3.8541,3.8541,true,false
+23,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.3858,183.0,3.7429,3.3674,3.7429,4.6405,true,true
+23,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.2462,52.0,1.6744,1.6547,1.6744,2.0281,true,false
+23,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.0437,127.0,2.8352,2.5296,2.8352,3.552,true,true
+23,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7733,341.0,0.6537,0.6407,0.6537,0.7407,true,true
+23,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.1293,57.0,0.3006,0.3315,0.3006,0.2586,true,false
+23,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,49.0,216.0,40.0,40.0,40.0,48.0,true,true
+24,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0252,1750.0,1.2764,1.3261,1.2764,1.4642,true,false
+24,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.2516,418.0,1.7362,2.2366,1.7362,2.852,true,true
+24,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.167,31.0,0.2275,0.3257,0.2275,0.3984,true,false
+24,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.3359,248.0,1.8927,1.8708,1.8927,1.9603,true,false
+24,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.8711,533.0,3.5287,3.6464,3.5287,4.7701,true,false
+24,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.0359,563.6,3.8541,3.9326,3.8541,4.083,true,false
+24,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.2947,426.0,3.7429,3.3674,3.7429,3.4959,true,false
+24,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.9804,182.0,1.6744,1.6547,1.6744,2.0606,true,false
+24,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.5675,291.0,2.8352,2.5296,2.8352,2.346,true,false
+24,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4628,790.0,0.6537,0.6407,0.6537,0.6086,true,false
+24,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3005,513.0,0.3006,0.3315,0.3006,0.4691,true,false
+24,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,38.0,546.0,40.0,40.0,40.0,29.0,true,false
+25,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.673,1190.0,1.2764,1.3261,1.2764,1.0958,true,false
+25,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.1187,236.0,1.7362,2.2366,1.7362,2.2516,true,false
+25,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.109,23.0,0.2275,0.3257,0.2275,0.2432,true,false
+25,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,0.9101,192.0,1.8927,1.8708,1.8927,1.5818,true,false
+25,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,1.825,385.0,3.5287,3.6464,3.5287,3.5058,true,false
+25,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,1.835,387.1,3.8541,3.9326,3.8541,3.3052,true,false
+25,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.6544,349.0,3.7429,3.3674,3.7429,2.1871,true,false
+25,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.7395,156.0,1.6744,1.6547,1.6744,1.1686,true,false
+25,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.2751,269.0,2.8352,2.5296,2.8352,1.5675,true,false
+25,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3507,620.0,0.6537,0.6407,0.6537,0.5485,true,false
+25,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.155,274.0,0.3006,0.3315,0.3006,0.3005,true,false
+25,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,34.0,738.0,40.0,40.0,40.0,35.0,true,false
+26,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1539,3357.0,1.2764,1.3261,1.2764,1.1576,true,false
+26,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.7215,519.0,1.7362,2.2366,1.7362,1.6147,true,false
+26,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2952,89.0,0.2275,0.3257,0.2275,0.2844,true,true
+26,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.7746,535.0,1.8927,1.8708,1.8927,1.8648,true,false
+26,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.0582,922.0,3.5287,3.6464,3.5287,3.6781,true,false
+26,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.0048,905.9,3.8541,3.9326,3.8541,3.9005,true,false
+26,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.2655,683.0,3.7429,3.3674,3.7429,3.7429,true,false
+26,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.4661,442.0,1.6744,1.6547,1.6744,1.6105,true,false
+26,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.5607,772.0,2.8352,2.5296,2.8352,2.346,true,false
+26,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5273,1534.0,0.6537,0.6407,0.6537,0.6546,true,false
+26,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3368,980.0,0.3006,0.3315,0.3006,0.3139,true,true
+26,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,1.0,40.0,40.0,40.0,35.5,false,false
+27,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7725,1334.0,1.2764,1.3261,1.2764,1.1576,true,false
+27,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.7677,132.0,1.7362,2.2366,1.7362,1.6147,true,false
+27,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1221,21.0,0.2275,0.3257,0.2275,0.2039,true,false
+27,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.2795,220.0,1.8927,1.8708,1.8927,1.7746,true,false
+27,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.4077,414.0,3.5287,3.6464,3.5287,3.0589,true,false
+27,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.1594,371.3,3.8541,3.9326,3.8541,3.2102,true,false
+27,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.4888,256.0,3.7429,3.3674,3.7429,4.008,true,false
+27,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.0236,176.0,1.6744,1.6547,1.6744,1.4661,true,false
+27,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0762,357.0,2.8352,2.5296,2.8352,2.5607,true,false
+27,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3926,678.0,0.6537,0.6407,0.6537,0.6546,true,false
+27,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2577,445.0,0.3006,0.3315,0.3006,0.2735,true,false
+27,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,40.0,627.0,40.0,40.0,40.0,40.0,true,false
+28,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.8086,2202.0,1.2764,1.3261,1.2764,1.3646,true,true
+28,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.9554,261.0,1.7362,2.2366,1.7362,2.3943,true,true
+28,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.5209,46.0,0.2275,0.3257,0.2275,0.2033,true,true
+28,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.6985,150.0,1.8927,1.8708,1.8927,2.5671,true,false
+28,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.552,402.0,3.5287,3.6464,3.5287,4.9197,true,true
+28,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.2733,465.7,3.8541,3.9326,3.8541,5.3497,true,true
+28,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,7.3602,650.0,3.7429,3.3674,3.7429,6.2989,true,true
+28,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2385,286.0,1.6744,1.6547,1.6744,2.5779,true,true
+28,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.7785,422.0,2.8352,2.5296,2.8352,3.634,true,true
+28,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0275,1251.0,0.6537,0.6407,0.6537,0.7565,true,true
+28,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3039,370.0,0.3006,0.3315,0.3006,0.2891,true,true
+28,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,47.0,725.0,40.0,40.0,40.0,50.0,true,true
+29,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2764,3064.0,1.2764,1.3261,1.2764,1.3646,true,false
+29,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.0045,372.0,1.7362,2.2366,1.7362,2.3943,true,true
+29,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1509,28.0,0.2275,0.3257,0.2275,0.2953,true,false
+29,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.6889,499.0,1.8927,1.8708,1.8927,2.0321,true,true
+29,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,6.1969,1150.0,3.5287,3.6464,3.5287,4.9197,true,true
+29,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.646,862.2,3.8541,3.9326,3.8541,5.3497,true,true
+29,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.0298,1119.0,3.7429,3.3674,3.7429,6.2989,true,true
+29,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.5219,468.0,1.6744,1.6547,1.6744,2.3503,true,true
+29,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.6535,678.0,2.8352,2.5296,2.8352,3.2687,true,true
+29,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6899,1656.0,0.6537,0.6407,0.6537,0.7826,true,true
+29,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2891,694.0,0.3006,0.3315,0.3006,0.2735,true,false
+29,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,43.0,1447.0,40.0,40.0,40.0,48.5,true,true
+30,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6267,662.0,1.2764,1.3261,1.2764,1.0765,true,true
+30,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.6674,56.0,1.7362,2.2366,1.7362,1.414,true,false
+30,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2382,8.0,0.2275,0.3257,0.2275,0.103,false,false
+30,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.7393,92.0,1.8927,1.8708,1.8927,2.3502,true,true
+30,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,6.9375,233.0,3.5287,3.6464,3.5287,3.552,true,true
+30,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,7.2144,242.3,3.8541,3.9326,3.8541,4.4942,true,true
+30,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,8.188,275.0,3.7429,3.3674,3.7429,4.3919,true,true
+30,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2454,109.0,1.6744,1.6547,1.6744,2.0893,true,true
+30,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.0791,137.0,2.8352,2.5296,2.8352,3.552,true,true
+30,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0935,445.0,0.6537,0.6407,0.6537,0.7565,true,true
+30,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2531,103.0,0.3006,0.3315,0.3006,0.2721,true,false
+30,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,54.0,304.0,40.0,40.0,40.0,50.5,true,true
+31,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0854,692.0,1.2764,1.3261,1.2764,1.2862,true,false
+31,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.8607,51.0,1.7362,2.2366,1.7362,1.2802,true,false
+31,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1181,7.0,0.2275,0.3257,0.2275,0.208,false,false
+31,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.2151,72.0,1.8927,1.8708,1.8927,1.8927,true,false
+31,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.1939,130.0,3.5287,3.6464,3.5287,3.0589,true,false
+31,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.3871,200.7,3.8541,3.9326,3.8541,3.9754,true,false
+31,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.3878,260.0,3.7429,3.3674,3.7429,4.6223,true,true
+31,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.7889,106.0,1.6744,1.6547,1.6744,2.0914,true,true
+31,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.8352,168.0,2.8352,2.5296,2.8352,3.2515,true,false
+31,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6007,383.0,0.6537,0.6407,0.6537,0.7401,true,false
+31,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3278,209.0,0.3006,0.3315,0.3006,0.3416,true,true
+31,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,35.5,312.0,40.0,40.0,40.0,42.0,true,false
+32,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.4642,1208.0,1.2764,1.3261,1.2764,1.2635,true,true
+32,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.852,272.0,1.7362,2.2366,1.7362,2.2516,true,true
+32,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.367,35.0,0.2275,0.3257,0.2275,0.2925,true,true
+32,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.5899,247.0,1.8927,1.8708,1.8927,1.5818,true,true
+32,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.6908,352.0,3.5287,3.6464,3.5287,3.5287,true,true
+32,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.083,389.4,3.8541,3.9326,3.8541,3.3782,true,true
+32,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.3487,224.0,3.7429,3.3674,3.7429,2.269,true,false
+32,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.3107,125.0,1.6744,1.6547,1.6744,1.3332,true,false
+32,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.3068,220.0,2.8352,2.5296,2.8352,1.6278,true,false
+32,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6388,527.0,0.6537,0.6407,0.6537,0.5833,true,false
+32,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4691,387.0,0.3006,0.3315,0.3006,0.3615,true,true
+32,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,26.0,247.0,40.0,40.0,40.0,32.0,true,false
+33,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9793,391.0,1.2764,1.3261,1.2764,1.1539,true,false
+33,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.9078,38.0,1.7362,2.2366,1.7362,1.7215,true,false
+33,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1433,6.0,0.2275,0.3257,0.2275,0.2844,false,false
+33,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.365,99.0,1.8927,1.8708,1.8927,1.9244,true,true
+33,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.9622,124.0,3.5287,3.6464,3.5287,3.0582,true,false
+33,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.1103,130.2,3.8541,3.9326,3.8541,3.9005,true,false
+33,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.3444,140.0,3.7429,3.3674,3.7429,2.6429,true,false
+33,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.645,27.0,1.6744,1.6547,1.6744,1.4094,true,false
+33,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.4605,103.0,2.8352,2.5296,2.8352,2.4961,true,false
+33,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6537,261.0,0.6537,0.6407,0.6537,0.643,true,false
+33,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.1678,67.0,0.3006,0.3315,0.3006,0.3139,true,false
+33,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,40.0,203.0,40.0,40.0,40.0,37.5,true,false
+34,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.875,1986.0,1.2764,1.3261,1.2764,0.9871,true,false
+34,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.01,562.0,1.7362,2.2366,1.7362,1.6103,true,true
+34,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2432,68.0,0.2275,0.3257,0.2275,0.1213,true,true
+34,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.0229,286.0,1.8927,1.8708,1.8927,1.5818,true,false
+34,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.0207,565.0,3.5287,3.6464,3.5287,3.403,true,false
+34,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,1.7722,495.5,3.8541,3.9326,3.8541,2.3613,true,false
+34,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.5486,433.0,3.7429,3.3674,3.7429,1.7289,true,false
+34,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.7654,214.0,1.6744,1.6547,1.6744,0.7395,true,false
+34,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.5451,432.0,2.8352,2.5296,2.8352,1.5182,true,false
+34,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3296,748.0,0.6537,0.6407,0.6537,0.5393,true,false
+34,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.278,631.0,0.3006,0.3315,0.3006,0.2085,true,false
+34,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,41.0,1087.0,40.0,40.0,40.0,34.0,true,true
+35,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.6976,1389.0,1.2764,1.3261,1.2764,1.6267,true,true
+35,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,4.7248,300.0,1.7362,2.2366,1.7362,2.0045,true,true
+35,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3465,22.0,0.2275,0.3257,0.2275,0.2382,true,true
+35,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.5671,163.0,1.8927,1.8708,1.8927,2.6889,true,true
+35,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,7.9534,505.0,3.5287,3.6464,3.5287,4.552,true,true
+35,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,6.6698,423.5,3.8541,3.9326,3.8541,5.2733,true,true
+35,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.6147,420.0,3.7429,3.3674,3.7429,6.2989,true,true
+35,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.1656,201.0,1.6744,1.6547,1.6744,2.7448,true,true
+35,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.6223,230.0,2.8352,2.5296,2.8352,4.0791,true,true
+35,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7565,619.0,0.6537,0.6407,0.6537,0.9857,true,true
+35,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3422,280.0,0.3006,0.3315,0.3006,0.2891,true,true
+35,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,1.0,40.0,40.0,40.0,48.0,false,false
+36,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0093,3455.0,1.2764,1.3261,1.2764,1.1958,true,false
+36,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.4949,887.0,1.7362,2.2366,1.7362,1.7362,true,false
+36,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2275,135.0,0.2275,0.3257,0.2275,0.1797,true,false
+36,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.0365,615.0,1.8927,1.8708,1.8927,1.5818,true,false
+36,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,1.9853,1178.0,3.5287,3.6464,3.5287,3.403,true,false
+36,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,1.8883,1120.4,3.8541,3.9326,3.8541,2.5629,true,false
+36,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,0.964,572.0,3.7429,3.3674,3.7429,2.0368,true,false
+36,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.6539,388.0,1.6744,1.6547,1.6744,1.0459,true,false
+36,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.1191,664.0,2.8352,2.5296,2.8352,1.6899,true,false
+36,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4446,1522.0,0.6537,0.6407,0.6537,0.5833,true,false
+36,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3056,1046.0,0.3006,0.3315,0.3006,0.3006,true,true
+36,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,36.0,974.0,40.0,40.0,40.0,38.0,true,false
+37,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.3638,4901.0,1.2764,1.3261,1.2764,1.6115,true,true
+37,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.2991,739.0,1.7362,2.2366,1.7362,2.4005,true,true
+37,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2769,89.0,0.2275,0.3257,0.2275,0.3477,true,true
+37,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.1342,686.0,1.8927,1.8708,1.8927,2.0321,true,true
+37,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.9248,1583.0,3.5287,3.6464,3.5287,4.7265,true,true
+37,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.2189,1356.1,3.8541,3.9326,3.8541,4.6131,true,true
+37,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.6729,1502.0,3.7429,3.3674,3.7429,5.6039,true,true
+37,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.96,630.0,1.6744,1.6547,1.6744,2.3503,true,true
+37,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.192,1026.0,2.8352,2.5296,2.8352,3.2687,true,true
+37,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7624,2740.0,0.6537,0.6407,0.6537,0.7938,true,true
+37,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2735,983.0,0.3006,0.3315,0.3006,0.3416,true,false
+37,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,36.0,1136.0,40.0,40.0,40.0,46.5,true,false
+38,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0765,305.0,1.2764,1.3261,1.2764,1.6267,true,false
+38,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.1086,26.0,1.7362,2.2366,1.7362,1.6674,true,false
+38,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.0853,2.0,0.2275,0.3257,0.2275,0.2382,false,false
+38,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.9188,45.0,1.8927,1.8708,1.8927,2.4709,true,true
+38,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.4112,80.0,3.5287,3.6464,3.5287,4.552,true,false
+38,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.4942,105.4,3.8541,3.9326,3.8541,5.2733,true,true
+38,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.3919,103.0,3.7429,3.3674,3.7429,6.6147,true,true
+38,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0893,49.0,1.6744,1.6547,1.6744,3.1656,true,true
+38,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2832,77.0,2.8352,2.5296,2.8352,3.6223,true,true
+38,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5118,145.0,0.6537,0.6407,0.6537,0.8129,true,false
+38,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2894,82.0,0.3006,0.3315,0.3006,0.2721,true,false
+38,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,52.0,143.0,40.0,40.0,40.0,50.5,true,true
+39,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1493,3870.0,1.2764,1.3261,1.2764,1.1576,true,false
+39,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.3386,473.0,1.7362,2.2366,1.7362,1.7215,true,false
+39,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1698,60.0,0.2275,0.3257,0.2275,0.2946,true,false
+39,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.9244,680.0,1.8927,1.8708,1.8927,1.7746,true,true
+39,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.4707,873.0,3.5287,3.6464,3.5287,3.6781,true,false
+39,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.1296,1459.2,3.8541,3.9326,3.8541,3.2102,true,true
+39,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.3734,1192.0,3.7429,3.3674,3.7429,3.7429,true,false
+39,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.4094,498.0,1.6744,1.6547,1.6744,1.6105,true,false
+39,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.4961,882.0,2.8352,2.5296,2.8352,2.346,true,false
+39,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.643,2165.0,0.6537,0.6407,0.6537,0.6546,true,false
+39,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3139,1057.0,0.3006,0.3315,0.3006,0.3368,true,true
+39,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,35.0,2213.0,40.0,40.0,40.0,36.0,true,false
+40,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.616,2183.0,1.2764,1.3261,1.2764,1.2862,true,true
+40,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.4005,290.0,1.7362,2.2366,1.7362,1.2802,true,true
+40,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3477,42.0,0.2275,0.3257,0.2275,0.2039,true,true
+40,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.2846,276.0,1.8927,1.8708,1.8927,1.7442,true,true
+40,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.7265,571.0,3.5287,3.6464,3.5287,3.0589,true,true
+40,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.6131,557.3,3.8541,3.9326,3.8541,3.9754,true,true
+40,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,5.6039,677.0,3.7429,3.3674,3.7429,4.6223,true,true
+40,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.6074,315.0,1.6744,1.6547,1.6744,1.96,true,true
+40,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.354,526.0,2.8352,2.5296,2.8352,3.192,true,true
+40,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.835,1128.0,0.6537,0.6407,0.6537,0.7401,true,true
+40,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3531,477.0,0.3006,0.3315,0.3006,0.3278,true,true
+40,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,49.0,521.0,40.0,40.0,40.0,42.0,true,true
+41,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.622,1788.0,1.2764,1.3261,1.2764,1.2643,true,true
+41,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.4312,310.0,1.7362,2.2366,1.7362,1.3842,true,true
+41,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3764,48.0,0.2275,0.3257,0.2275,0.1666,true,true
+41,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.992,254.0,1.8927,1.8708,1.8927,2.045,true,true
+41,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.4545,568.0,3.5287,3.6464,3.5287,3.7224,true,true
+41,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.1015,650.5,3.8541,3.9326,3.8541,3.1103,true,true
+41,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.6429,337.0,3.7429,3.3674,3.7429,3.3444,true,false
+41,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.2391,158.0,1.6744,1.6547,1.6744,1.3164,true,false
+41,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.2546,415.0,2.8352,2.5296,2.8352,2.3558,true,true
+41,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9425,1039.0,0.6537,0.6407,0.6537,0.6575,true,true
+41,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3121,344.0,0.3006,0.3315,0.3006,0.273,true,true
+41,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,40.0,395.0,40.0,40.0,40.0,38.0,true,false
+42,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1958,3620.0,1.2764,1.3261,1.2764,1.2643,true,false
+42,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.3842,540.0,1.7362,2.2366,1.7362,1.8487,true,false
+42,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1666,65.0,0.2275,0.3257,0.2275,0.2844,true,false
+42,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.7611,687.0,1.8927,1.8708,1.8927,1.5704,true,false
+42,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.7144,1449.0,3.5287,3.6464,3.5287,3.7224,true,true
+42,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.5629,999.8,3.8541,3.9326,3.8541,3.4972,true,false
+42,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.6019,1015.0,3.7429,3.3674,3.7429,2.269,true,false
+42,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.0459,408.0,1.6744,1.6547,1.6744,1.3164,true,false
+42,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.3558,919.0,2.8352,2.5296,2.8352,2.153,true,false
+42,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6392,1935.0,0.6537,0.6407,0.6537,0.6575,true,false
+42,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3006,910.0,0.3006,0.3315,0.3006,0.3169,true,false
+42,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,38.0,1157.0,40.0,40.0,40.0,37.5,true,false
+44,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.8222,186.0,1.2764,1.3261,1.2764,1.0093,true,false
+44,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.7583,25.0,1.7362,2.2366,1.7362,1.7362,true,false
+44,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1213,4.0,0.2275,0.3257,0.2275,0.2432,false,false
+44,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.183,39.0,1.8927,1.8708,1.8927,1.5818,true,false
+44,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,2.3356,77.0,3.5287,3.6464,3.5287,3.403,true,false
+44,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.1627,71.3,3.8541,3.9326,3.8541,2.3613,true,false
+44,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,1.7289,57.0,3.7429,3.3674,3.7429,1.5486,true,false
+44,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,0.6673,22.0,1.6744,1.6547,1.6744,0.7654,true,false
+44,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.0616,35.0,2.8352,2.5296,2.8352,1.5451,true,false
+44,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.5393,122.0,0.6537,0.6407,0.6537,0.4593,true,false
+44,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.1989,45.0,0.3006,0.3315,0.3006,0.278,true,false
+44,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,34.0,137.0,40.0,40.0,40.0,36.0,true,false
+45,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.8835,3339.0,1.2764,1.3261,1.2764,1.3638,true,true
+45,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,3.4585,549.0,1.7362,2.2366,1.7362,2.2991,true,true
+45,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.4599,73.0,0.2275,0.3257,0.2275,0.2769,true,true
+45,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,3.1876,506.0,1.8927,1.8708,1.8927,2.0321,true,true
+45,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,8.1831,1299.0,3.5287,3.6464,3.5287,3.8759,true,true
+45,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,8.2354,1307.3,3.8541,3.9326,3.8541,4.2189,true,true
+45,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.898,1095.0,3.7429,3.3674,3.7429,4.6729,true,true
+45,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.6584,422.0,1.6744,1.6547,1.6744,1.96,true,true
+45,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.8868,617.0,2.8352,2.5296,2.8352,3.192,true,true
+45,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9866,1749.0,0.6537,0.6407,0.6537,0.7624,true,true
+45,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3779,670.0,0.3006,0.3315,0.3006,0.2948,true,true
+45,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,0.0,40.0,40.0,40.0,40.0,false,false
+46,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.3931,425.0,1.2764,1.3261,1.2764,1.0765,true,true
+46,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.4689,40.0,1.7362,2.2366,1.7362,1.1086,true,false
+46,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1102,3.0,0.2275,0.3257,0.2275,0.103,false,false
+46,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.3502,64.0,1.8927,1.8708,1.8927,1.9188,true,true
+46,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.2597,116.0,3.5287,3.6464,3.5287,3.4112,true,true
+46,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,4.9207,134.0,3.8541,3.9326,3.8541,3.8541,true,true
+46,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,6.0223,164.0,3.7429,3.3674,3.7429,4.3858,true,true
+46,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.3502,64.0,1.6744,1.6547,1.6744,1.6744,true,true
+46,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.5987,98.0,2.8352,2.5296,2.8352,3.2832,true,true
+46,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.8129,248.0,0.6537,0.6407,0.6537,0.7407,true,true
+46,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2721,83.0,0.3006,0.3315,0.3006,0.2531,true,false
+46,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,48.0,172.0,40.0,40.0,40.0,52.0,true,true
+47,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.5902,3963.0,1.2764,1.3261,1.2764,1.3874,true,true
+47,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.7003,572.0,1.7362,2.2366,1.7362,2.9341,true,true
+47,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1558,33.0,0.2275,0.3257,0.2275,0.3408,true,false
+47,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.4784,525.0,1.8927,1.8708,1.8927,2.0321,true,true
+47,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.3942,719.0,3.5287,3.6464,3.5287,4.9248,true,false
+47,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,5.1069,1081.8,3.8541,3.9326,3.8541,4.2874,true,true
+47,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,5.5422,1174.0,3.7429,3.3674,3.7429,4.697,true,true
+47,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.7522,583.0,1.6744,1.6547,1.6744,1.96,true,true
+47,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.8097,807.0,2.8352,2.5296,2.8352,3.192,true,true
+47,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.8775,2187.0,0.6537,0.6407,0.6537,0.7624,true,true
+47,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3186,794.0,0.3006,0.3315,0.3006,0.3163,true,true
+47,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,40.0,1323.0,40.0,40.0,40.0,44.0,true,false
+48,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.5066,13202.0,1.2764,1.3261,1.2764,1.1576,true,true
+48,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,2.6701,2414.0,1.7362,2.2366,1.7362,1.6147,true,true
+48,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.3185,288.0,0.2275,0.3257,0.2275,0.2946,true,true
+48,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.8648,1686.0,1.8927,1.8708,1.8927,1.9244,true,false
+48,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,5.068,4582.0,3.5287,3.6464,3.5287,3.6781,true,true
+48,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,6.0632,5481.7,3.8541,3.9326,3.8541,4.0415,true,true
+48,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,3.8325,3465.0,3.7429,3.3674,3.7429,3.4959,true,true
+48,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.0606,1863.0,1.6744,1.6547,1.6744,1.6105,true,true
+48,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.346,2121.0,2.8352,2.5296,2.8352,2.5544,true,false
+48,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.674,5906.0,0.6537,0.6407,0.6537,0.6086,true,true
+48,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3434,3009.0,0.3006,0.3315,0.3006,0.3139,true,true
+48,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,44.0,277.0,40.0,40.0,40.0,32.5,true,true
+49,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9078,931.0,1.2764,1.3261,1.2764,1.1576,true,false
+49,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.2373,126.0,1.7362,2.2366,1.7362,1.7215,true,false
+49,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.2946,30.0,0.2275,0.3257,0.2275,0.2952,true,true
+49,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.2963,132.0,1.8927,1.8708,1.8927,1.8648,true,false
+49,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.0639,312.0,3.5287,3.6464,3.5287,3.6781,true,false
+49,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,2.0986,213.7,3.8541,3.9326,3.8541,4.1296,true,false
+49,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.2292,227.0,3.7429,3.3674,3.7429,3.8197,true,false
+49,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.6105,164.0,1.6744,1.6547,1.6744,1.4661,true,false
+49,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.856,189.0,2.8352,2.5296,2.8352,2.5544,true,false
+49,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.471,483.0,0.6537,0.6407,0.6537,0.643,true,false
+49,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2447,251.0,0.3006,0.3315,0.3006,0.3368,true,false
+49,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,36.0,473.0,40.0,40.0,40.0,35.0,true,false
+50,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.0466,219.0,1.2764,1.3261,1.2764,1.0818,true,false
+50,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,0.9781,19.0,1.7362,2.2366,1.7362,1.414,false,false
+50,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.103,2.0,0.2275,0.3257,0.2275,0.1102,false,false
+50,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.4709,48.0,1.8927,1.8708,1.8927,1.9188,true,true
+50,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.552,69.0,3.5287,3.6464,3.5287,3.4112,true,true
+50,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.3358,64.8,3.8541,3.9326,3.8541,4.4942,true,false
+50,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.0153,78.0,3.7429,3.3674,3.7429,4.3919,true,true
+50,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.184,23.0,1.6744,1.6547,1.6744,2.0893,true,false
+50,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,3.552,69.0,2.8352,2.5296,2.8352,3.2832,true,true
+50,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.7407,155.0,0.6537,0.6407,0.6537,0.7733,true,true
+50,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.1673,35.0,0.3006,0.3315,0.3006,0.2586,true,false
+50,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,53.0,102.0,40.0,40.0,40.0,49.0,true,true
+51,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1576,2893.0,1.2764,1.3261,1.2764,1.1539,true,false
+51,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.6147,421.0,1.7362,2.2366,1.7362,1.7215,true,false
+51,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1611,42.0,0.2275,0.3257,0.2275,0.2952,true,false
+51,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.3961,364.0,1.8927,1.8708,1.8927,1.8648,true,false
+51,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.6781,959.0,3.5287,3.6464,3.5287,3.0639,true,true
+51,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.2102,837.0,3.8541,3.9326,3.8541,4.1296,true,false
+51,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.008,1045.0,3.7429,3.3674,3.7429,3.3734,true,true
+51,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.3232,345.0,1.6744,1.6547,1.6744,1.6105,true,false
+51,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.5544,666.0,2.8352,2.5296,2.8352,2.4961,true,false
+51,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6546,1636.0,0.6537,0.6407,0.6537,0.6043,true,true
+51,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2457,614.0,0.3006,0.3315,0.3006,0.3368,true,false
+51,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,,3.0,40.0,40.0,40.0,35.5,false,false
+53,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2642,2226.0,1.2764,1.3261,1.2764,1.2635,true,false
+53,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.8186,425.0,1.7362,2.2366,1.7362,1.7362,true,true
+53,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1797,42.0,0.2275,0.3257,0.2275,0.367,true,false
+53,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.5704,367.0,1.8927,1.8708,1.8927,1.7611,true,false
+53,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.128,731.0,3.5287,3.6464,3.5287,3.6908,true,false
+53,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.4972,817.3,3.8541,3.9326,3.8541,3.3782,true,false
+53,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.0368,476.0,3.7429,3.3674,3.7429,2.269,true,false
+53,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.2965,303.0,1.6744,1.6547,1.6744,1.3107,true,false
+53,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.7929,419.0,2.8352,2.5296,2.8352,2.153,true,false
+53,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.6537,1151.0,0.6537,0.6407,0.6537,0.5836,true,false
+53,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.3169,558.0,0.3006,0.3315,0.3006,0.3615,true,true
+53,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,48.0,776.0,40.0,40.0,40.0,32.0,true,true
+54,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.7063,808.0,1.2764,1.3261,1.2764,1.2643,true,true
+54,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.3509,72.0,1.7362,2.2366,1.7362,1.1687,true,false
+54,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1126,6.0,0.2275,0.3257,0.2275,0.1816,false,false
+54,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,2.045,109.0,1.8927,1.8708,1.8927,1.6843,true,true
+54,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,4.1464,221.0,3.5287,3.6464,3.5287,2.9622,true,true
+54,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.4203,182.3,3.8541,3.9326,3.8541,3.1103,true,false
+54,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,4.334,231.0,3.7429,3.3674,3.7429,2.6429,true,true
+54,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.3696,73.0,1.6744,1.6547,1.6744,1.2391,true,false
+54,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,4.4466,237.0,2.8352,2.5296,2.8352,2.4605,true,true
+54,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,1.1678,553.0,0.6537,0.6407,0.6537,0.6885,true,true
+54,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.207,98.0,0.3006,0.3315,0.3006,0.273,true,false
+54,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,49.0,145.0,40.0,40.0,40.0,40.0,true,true
+55,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9123,1810.0,1.2764,1.3261,1.2764,1.3638,true,false
+55,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.016,180.0,1.7362,2.2366,1.7362,2.1282,true,false
+55,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.175,31.0,0.2275,0.3257,0.2275,0.2769,true,false
+55,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,1.7442,309.0,1.8927,1.8708,1.8927,2.1342,true,false
+55,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,3.24,574.0,3.5287,3.6464,3.5287,3.0589,true,false
+55,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,3.1384,556.0,3.8541,3.9326,3.8541,4.0944,true,false
+55,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,2.6078,462.0,3.7429,3.3674,3.7429,4.6729,true,false
+55,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,1.5297,271.0,1.6744,1.6547,1.6744,2.0914,true,false
+55,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.4949,442.0,2.8352,2.5296,2.8352,3.2515,true,false
+55,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.4657,924.0,0.6537,0.6407,0.6537,0.7624,true,false
+55,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.2702,536.0,0.3006,0.3315,0.3006,0.3416,true,false
+55,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,42.0,418.0,40.0,40.0,40.0,42.0,true,true
+56,total_rate_vmt,1,Overall fatality rate per mile traveled,fatalities_total,rate_per_100m_vmt,state_median,above,20,2021,2023,1.2959,388.0,1.2764,1.3261,1.2764,1.6267,true,true
+56,pedestrian_rate,2,Pedestrian fatality rate,fatalities_pedestrian,rate_per_100k,state_median,above,20,2021,2023,1.6609,29.0,1.7362,2.2366,1.7362,2.3943,true,false
+56,pedalcyclist_rate,3,Bicyclist (pedalcyclist) fatality rate,fatalities_pedalcyclist,rate_per_100k,state_median,above,20,2021,2023,0.1718,3.0,0.2275,0.3257,0.2275,0.2382,false,false
+56,motorcyclist_rate,4,Motorcyclist fatality rate,fatalities_motorcyclist,rate_per_100k,state_median,above,20,2021,2023,3.0354,53.0,1.8927,1.8708,1.8927,1.9188,true,true
+56,speeding_rate,5,Speeding-related fatality rate,fatalities_speeding_related,rate_per_100k,state_median,above,20,2021,2023,9.278,162.0,3.5287,3.6464,3.5287,4.9197,true,true
+56,alcohol_rate,6,Alcohol-impaired-driving fatality rate,fatalities_alcohol_impaired_driving,rate_per_100k,state_median,above,20,2021,2023,6.3457,110.8,3.8541,3.9326,3.8541,5.4537,true,true
+56,unrestrained_rate,7,Unrestrained passenger-vehicle occupant fatality rate,fatalities_unrestrained_pv_occupant,rate_per_100k,state_median,above,20,2021,2023,8.7053,152.0,3.7429,3.3674,3.7429,7.1959,true,true
+56,young_driver_rate,8,Fatalities in crashes involving a young driver (15-20),fatalities_young_driver_involved,rate_per_100k,state_median,above,20,2021,2023,2.5199,44.0,1.6744,1.6547,1.6744,3.1656,true,true
+56,older_driver_rate,9,Fatalities in crashes involving an older driver (65+),fatalities_older_driver_involved,rate_per_100k,state_median,above,20,2021,2023,5.0399,88.0,2.8352,2.5296,2.8352,3.634,true,true
+56,roadway_departure_rate_vmt,10,Roadway-departure fatality rate per mile traveled,fatalities_roadway_departure,rate_per_100m_vmt,state_median,above,20,2021,2023,0.9519,285.0,0.6537,0.6407,0.6537,0.7826,true,true
+56,intersection_rate_vmt,11,Intersection-related fatality rate per mile traveled,fatalities_intersection_related,rate_per_100m_vmt,state_median,above,20,2021,2023,0.0935,28.0,0.3006,0.3315,0.3006,0.2894,true,false
+56,ems_time_to_hospital,12,Time from crash to hospital arrival (median),ems_minutes_crash_to_hospital,median_minutes,state_median,above,30,2021,2023,49.0,125.0,40.0,40.0,40.0,53.0,true,true

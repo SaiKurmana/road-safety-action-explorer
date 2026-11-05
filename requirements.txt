@@ -1,0 +1,18 @@
+# Pinned for reproducible builds (Python 3.11).
+dbt-core==1.12.6
+dbt-duckdb==1.11.1
+duckdb==2.0.0
+jinja2==3.1.6
+markdown==3.11.2
+numpy==2.4.6
+openpyxl==3.1.5
+pandas==3.1.1
+plotly==7.1.0
+pyarrow==26.0.1
+pypdf==6.21.4
+pytest==9.2.0
+pyyaml==6.0.3
+requests==2.34.2
+ruff==0.17.3
+streamlit==1.66.1
+xlrd==2.0.2

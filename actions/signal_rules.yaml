@@ -1,0 +1,125 @@
+about: >-
+  Transparent "signal -> resources" rules. Each rule compares one state measure with a comparator
+  computed from the same data. When the comparison is true, the app lists action-library entries
+  whose topic_tags include any of the rule's show_tags. Rules describe where a state's data differ
+  from a benchmark and point to published resources; they do not recommend what a state should do.
+
+window:
+  years: 3
+  description: >-
+    Counts and denominators are pooled over the most recent 3 FARS final years (e.g. 2021-2023)
+    before computing rates, which steadies rates for smaller states.
+
+comparators:
+  state_median: Median of the 50 states and the District of Columbia for the same window and metric.
+  national_rate: United States value for the same window (all-state total divided by all-state denominator).
+
+metrics:
+  rate_per_100k: Fatalities per 100,000 resident population (pooled window).
+  rate_per_100m_vmt: Fatalities per 100 million vehicle miles traveled (pooled window).
+  median_minutes: Median minutes from crash to the EMS milestone, among fatal crashes with valid recorded times.
+
+min_n: >-
+  A rule is evaluated only when enough records stand behind the state's value: at least 20 deaths in the
+  window for rate rules (rates on fewer deaths are statistically unstable), and at least 30 crashes with
+  valid EMS times for the post-crash rule. Otherwise the rule is shown as "not evaluated".
+
+# Person-type and behavior measures use population (a population-health framing); road-system
+# measures (total, roadway departure, intersection) use travel (VMT) as the exposure.
+rules:
+  - id: total_rate_vmt
+    label: Overall fatality rate per mile traveled
+    measure_id: fatalities_total
+    metric: rate_per_100m_vmt
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [crosscutting]
+  - id: pedestrian_rate
+    label: Pedestrian fatality rate
+    measure_id: fatalities_pedestrian
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [pedestrian]
+  - id: pedalcyclist_rate
+    label: Bicyclist (pedalcyclist) fatality rate
+    measure_id: fatalities_pedalcyclist
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [bicycle]
+  - id: motorcyclist_rate
+    label: Motorcyclist fatality rate
+    measure_id: fatalities_motorcyclist
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [motorcycle]
+  - id: speeding_rate
+    label: Speeding-related fatality rate
+    measure_id: fatalities_speeding_related
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [speed]
+  - id: alcohol_rate
+    label: Alcohol-impaired-driving fatality rate
+    measure_id: fatalities_alcohol_impaired_driving
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [alcohol]
+  - id: unrestrained_rate
+    label: Unrestrained passenger-vehicle occupant fatality rate
+    measure_id: fatalities_unrestrained_pv_occupant
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [occupant_protection]
+  - id: young_driver_rate
+    label: Fatalities in crashes involving a young driver (15-20)
+    measure_id: fatalities_young_driver_involved
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [young_driver]
+  - id: older_driver_rate
+    label: Fatalities in crashes involving an older driver (65+)
+    measure_id: fatalities_older_driver_involved
+    metric: rate_per_100k
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [older_driver]
+  - id: roadway_departure_rate_vmt
+    label: Roadway-departure fatality rate per mile traveled
+    measure_id: fatalities_roadway_departure
+    metric: rate_per_100m_vmt
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [roadway_departure]
+  - id: intersection_rate_vmt
+    label: Intersection-related fatality rate per mile traveled
+    measure_id: fatalities_intersection_related
+    metric: rate_per_100m_vmt
+    comparator: state_median
+    operator: above
+    min_n: 20
+    show_tags: [intersection]
+  - id: ems_time_to_hospital
+    label: Time from crash to hospital arrival (median)
+    measure_id: ems_minutes_crash_to_hospital
+    metric: median_minutes
+    comparator: state_median
+    operator: above
+    min_n: 30
+    show_tags: [post_crash]

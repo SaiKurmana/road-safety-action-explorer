@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Action library</h1>
+<p class="lead">{{ n }} published countermeasures and frameworks. Titles, ratings, and benefit statements are carried over verbatim from the cited source; each citation links to the page.</p>
+<p class="muted">Safe System element, prevention level, lead sectors, and topics are curator classifications (<a href="{{ C.REPO_URL }}/blob/main/docs/action_library_curation.md">curation rules</a>). {{ C.SORT_RULE }}</p>
+<div class="filters" role="search">
+  <label class="sr"><span class="muted">Search</span><br><input type="search" data-filter="q" placeholder="Search titles"></label>
+  <label><span class="muted">Element</span><br><select data-filter="element"><option value="">All</option>{% for e in elements %}<option>{{ e }}</option>{% endfor %}</select></label>
+  <label><span class="muted">Prevention level</span><br><select data-filter="level"><option value="">All</option>{% for k, v in PREV.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+  <label><span class="muted">Topic</span><br><select data-filter="tags"><option value="">All</option>{% for t in tags %}<option>{{ t }}</option>{% endfor %}</select></label>
+  <label><span class="muted">Source</span><br><select data-filter="source"><option value="">All</option>{% for k, v in SRC.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+  <label><span class="muted">Min. CTW stars</span><br><select data-filter="stars"><option value="">Any</option>{% for i in range(1, 6) %}<option value="{{ i }}">{{ "★" * i }}</option>{% endfor %}</select></label>
+</div>
+<p id="library-count" class="muted" aria-live="polite"></p>
+<div class="table-wrap"><table id="library">
+<thead><tr><th>#</th><th>Title (verbatim)</th><th>Published rating</th><th>Safe System element</th><th>Prevention level</th><th>Topics</th><th>Lead sectors (generic)</th><th>Citation</th></tr></thead>
+<tbody>{% for a in actions %}
+<tr data-q="{{ a.title|lower }}" data-element="{{ a.safe_system_element|lower }}" data-level="{{ a.prevention_level }}" data-tags="{{ (a.topic_tags or '')|replace('; ', '|') }}" data-source="{{ a.source_id }}" data-stars="{{ a.stars or 0 }}">
+<td class="num">{{ a.default_order }}</td><td><strong>{{ a.title }}</strong>{% if a.evidence_detail %}<div class="muted">“{{ a.evidence_detail }}”</div>{% endif %}</td>
+<td>{{ a.rating }}{% if a.stars %}<div class="muted">{{ a.rating_definition }}</div>{% endif %}</td><td>{{ a.safe_system_element }}</td><td>{{ PREV[a.prevention_level] }}</td><td>{{ a.topic_tags }}</td><td>{{ a.lead_sectors }}</td>
+<td><a href="{{ a.source_url }}">{{ SRC[a.source_id] }}</a><div class="muted">{{ a.section }}</div></td></tr>{% endfor %}</tbody>
+</table></div>
+{% endblock %}
