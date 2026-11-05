@@ -1,0 +1,431 @@
+version: 2
+models:
+- name: fct_state_year_measures
+  description: State x year x measure counts with population and VMT rates. state_fips 0 = United States.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('states')
+          field: state_fips
+  - name: year
+    description: Crash year.
+    data_tests:
+    - not_null
+  - name: measure_id
+    description: Measure identifier (see measures seed).
+    data_tests:
+    - not_null
+  - name: count
+    description: Fatalities (see measure definition).
+    data_tests:
+    - not_null
+  - name: population
+    description: Census resident population for the state and year.
+    data_tests:
+    - not_null
+  - name: vmt_denominator
+    description: Which VMT is the denominator for rate_per_100m_vmt (total, rural, urban, or a function class);
+      empty when no VMT rate applies.
+  - name: vmt_millions
+    description: VMT used as denominator, millions of miles.
+  - name: rate_per_100k
+    description: count / population x 100,000.
+    data_tests:
+    - not_null
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 60
+    - value_between:
+        arguments:
+          min_value: 3
+          max_value: 40
+          where_sql: measure_id = 'fatalities_total'
+  - name: rate_per_100m_vmt
+    description: count / (VMT in hundred-million miles). Null when no VMT denominator applies.
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 15
+    - value_between:
+        arguments:
+          min_value: 0.3
+          max_value: 3.5
+          where_sql: measure_id = 'fatalities_total'
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - year
+        - measure_id
+- name: fct_window_measures
+  description: Pooled signal-window comparison (most recent window_years final years) per state x measure, with
+    prior-window trend, U.S. value, median of the 50 states + DC, and median of the state's peers.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+    data_tests:
+    - not_null
+  - name: measure_id
+    description: Measure identifier.
+    data_tests:
+    - not_null
+  - name: window_start
+    description: First year of the pooled window.
+  - name: window_end
+    description: Last year of the pooled window (most recent final FARS year).
+  - name: count_window
+    description: Fatalities summed over the window.
+  - name: count_annual_avg
+    description: Average annual fatalities in the window.
+  - name: low_count_flag
+    description: True when the window count is below 20; rates on small counts are unstable.
+  - name: rate_per_100k
+    description: Pooled fatalities / pooled population x 100,000.
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 60
+  - name: rate_per_100m_vmt
+    description: Pooled fatalities per 100 million VMT (pooled).
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 15
+  - name: prior_window_start
+    description: First year of the prior window of equal length.
+  - name: prior_window_end
+    description: Last year of the prior window.
+  - name: prior_rate_per_100k
+    description: Rate per 100k in the prior window.
+  - name: prior_rate_per_100m_vmt
+    description: Rate per 100M VMT in the prior window.
+  - name: pct_change_rate_per_100k
+    description: Percent change in rate per 100k, prior window to current window.
+  - name: national_rate_per_100k
+    description: U.S. pooled rate per 100k for the same window.
+  - name: national_rate_per_100m_vmt
+    description: U.S. pooled rate per 100M VMT for the same window.
+  - name: state_median_rate_per_100k
+    description: Median rate per 100k across the 50 states + DC.
+  - name: state_median_rate_per_100m_vmt
+    description: Median rate per 100M VMT across the 50 states + DC.
+  - name: peer_median_rate_per_100k
+    description: Median rate per 100k across the state's peer states (dim_peers).
+  - name: peer_median_rate_per_100m_vmt
+    description: Median rate per 100M VMT across the state's peer states.
+  - name: rank_rate_per_100k
+    description: Rank among the 50 states + DC by rate per 100k (1 = highest). Null for the U.S. row.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - measure_id
+- name: dim_state_profile
+  description: Most-recent-year denominators and peer-matching features per state (0 = U.S.).
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+    data_tests:
+    - unique
+    - not_null
+  - name: state_abbr
+    description: USPS abbreviation.
+  - name: state_name
+    description: State name.
+  - name: profile_year
+    description: Year of the features (most recent analysis year).
+  - name: population
+    description: Resident population.
+  - name: vmt_total_millions
+    description: Total VMT, millions.
+  - name: rural_vmt_share
+    description: Rural VMT / total VMT (FHWA VM-2).
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 1
+  - name: vmt_per_capita
+    description: Total VMT / population, miles per resident per year.
+- name: dim_peers
+  description: 'Peer states: the n_peers nearest states by Euclidean distance on z-scored rural VMT share and VMT
+    per capita (most recent year). Ties broken by FIPS.'
+  columns:
+  - name: state_fips
+    description: State FIPS code.
+    data_tests:
+    - not_null
+  - name: peer_rank
+    description: 1 = most similar.
+  - name: peer_fips
+    description: Peer state FIPS code.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('states')
+          field: state_fips
+  - name: distance
+    description: Euclidean distance in standardized feature space.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - peer_rank
+- name: fct_ems_times
+  description: Time from crash to EMS arrival at scene and at hospital for fatal crashes, with completeness, by
+    state (0 = U.S.) and period. Medians use only valid, plausible intervals.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+    data_tests:
+    - not_null
+  - name: period_label
+    description: Year or pooled window label.
+  - name: period_start
+    description: First year of the period.
+  - name: period_end
+    description: Last year of the period.
+  - name: is_signal_window
+    description: True for the pooled signal window used by rules.
+  - name: n_crashes
+    description: Fatal crashes.
+  - name: n_crash_time_known
+    description: Crashes with valid crash time.
+  - name: n_scene_valid
+    description: Crashes with a valid crash-to-scene interval.
+  - name: n_scene_not_applicable
+    description: EMS arrival coded not applicable / not notified.
+  - name: n_scene_implausible
+    description: Intervals of 720+ minutes, excluded.
+  - name: pct_crashes_scene_time_valid
+    description: n_scene_valid / n_crashes x 100 (completeness).
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 100
+  - name: n_hospital_valid
+    description: Crashes with a valid crash-to-hospital interval.
+  - name: n_hospital_not_applicable
+    description: Hospital arrival coded not applicable / not transported / terminated / cancelled.
+  - name: n_hospital_implausible
+    description: Intervals of 720+ minutes, excluded.
+  - name: pct_crashes_hospital_time_valid
+    description: n_hospital_valid / n_crashes x 100.
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 100
+  - name: pct_transport_eligible_hospital_time_valid
+    description: n_hospital_valid / (n_crashes - n_hospital_not_applicable) x 100.
+  - name: median_minutes_to_scene
+    description: Median minutes, crash to EMS arrival at scene.
+  - name: p90_minutes_to_scene
+    description: 90th percentile minutes, crash to EMS arrival at scene.
+  - name: median_minutes_to_hospital
+    description: Median minutes, crash to EMS arrival at hospital.
+  - name: p90_minutes_to_hospital
+    description: 90th percentile minutes, crash to EMS arrival at hospital.
+  - name: state_median_minutes_to_scene
+    description: Median of state medians (signal window only).
+  - name: state_median_minutes_to_hospital
+    description: Median of state medians (signal window only).
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - period_label
+- name: fct_signal_inputs
+  description: Uniform (state, measure, metric) values with comparators, used to evaluate signal rules.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+  - name: measure_id
+    description: Measure identifier.
+  - name: metric
+    description: rate_per_100k, rate_per_100m_vmt, or median_minutes.
+  - name: value
+    description: The state's value.
+  - name: n
+    description: Records behind the value (deaths in window, or crashes with valid EMS times).
+  - name: national_value
+    description: U.S. value for the same metric and window.
+  - name: state_median
+    description: Median across the 50 states + DC.
+  - name: peer_median
+    description: Median across the state's peers.
+  - name: window_start
+    description: First year of the window.
+  - name: window_end
+    description: Last year of the window.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - measure_id
+        - metric
+- name: fct_state_signals
+  description: Every signal rule evaluated for every state (50 + DC), with the values used.
+  columns:
+  - name: state_fips
+    description: State FIPS code.
+    data_tests:
+    - not_null
+  - name: rule_id
+    description: Rule identifier from actions/signal_rules.yaml.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('signal_rules')
+          field: rule_id
+  - name: rule_order
+    description: Display order of the rule.
+  - name: label
+    description: Rule label.
+  - name: measure_id
+    description: Measure the rule reads.
+  - name: metric
+    description: Metric the rule reads.
+  - name: comparator
+    description: state_median or national_rate.
+  - name: operator
+    description: above or below.
+  - name: min_n
+    description: Minimum underlying records required to evaluate the rule.
+  - name: window_start
+    description: First year of the window.
+  - name: window_end
+    description: Last year of the window.
+  - name: value
+    description: State value.
+  - name: n
+    description: Underlying records.
+  - name: comparator_value
+    description: Value the state is compared against.
+  - name: national_value
+    description: U.S. value (context).
+  - name: state_median
+    description: Median of states (context).
+  - name: peer_median
+    description: Median of peer states (context).
+  - name: evaluable
+    description: False when data are missing or fewer than min_n records exist.
+  - name: triggered
+    description: True when the comparison holds and the rule is evaluable.
+    data_tests:
+    - not_null
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - rule_id
+- name: fct_signal_actions
+  description: Action-library entries linked to each state's triggered signals (via topic tags).
+  columns:
+  - name: state_fips
+    description: State FIPS code.
+  - name: action_id
+    description: Action identifier.
+    data_tests:
+    - relationships:
+        arguments:
+          to: ref('actions')
+          field: action_id
+  - name: default_order
+    description: Upstream-first default sort order.
+  - name: safe_system_element
+    description: Safe System element of the action.
+  - name: prevention_level
+    description: primary_upstream, individual_behavior, or post_crash.
+  - name: triggered_by_rules
+    description: Rule ids (semicolon-separated) that linked this action.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - action_id
+- name: dim_actions
+  description: Action library with flattened tags and lead sectors.
+  columns:
+  - name: action_id
+    description: Stable identifier.
+    data_tests:
+    - unique
+    - not_null
+  - name: default_order
+    description: Upstream-first sort position.
+    data_tests:
+    - unique
+    - not_null
+  - name: title
+    description: Title as printed in the source.
+    data_tests:
+    - not_null
+  - name: source_id
+    description: sources.yml document id.
+  - name: source
+    description: Citation of the source document.
+  - name: source_url
+    description: PDF link with
+  - name: source_landing_url
+    description: Catalog record of the document.
+  - name: section
+    description: Chapter/section path in the source.
+  - name: page
+    description: Printed page label (or handout number).
+  - name: pdf_page
+    description: PDF page number of the citation.
+  - name: safe_system_element
+    description: Safe Road Users, Safe Vehicles, Safe Speeds, Safe Roads, or Post-Crash Care.
+    data_tests:
+    - accepted_values:
+        arguments:
+          values:
+          - Safe Road Users
+          - Safe Vehicles
+          - Safe Speeds
+          - Safe Roads
+          - Post-Crash Care
+  - name: prevention_level
+    description: primary_upstream, individual_behavior, or post_crash.
+    data_tests:
+    - accepted_values:
+        arguments:
+          values:
+          - primary_upstream
+          - individual_behavior
+          - post_crash
+  - name: rating
+    description: Evidence rating exactly as published (e.g. CTW stars) or "Not rated by source".
+  - name: stars
+    description: Number of CTW stars (null for sources without stars).
+  - name: rating_status
+    description: published, not_rated_by_source, or not_verified.
+  - name: rating_definition
+    description: The source's own definition of the rating level.
+  - name: rating_source
+    description: Where the rating appears in the source.
+  - name: evidence_detail
+    description: Published benefit statement (PSC) or objective text (NRSS).
+  - name: topic_tags
+    description: Semicolon-separated topic tags used by signal rules.
+  - name: lead_sectors
+    description: Generic roles typically involved (curator classification).

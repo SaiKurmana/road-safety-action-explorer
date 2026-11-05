@@ -1,0 +1,45 @@
+name: road_safety
+version: "1.0.0"
+config-version: 2
+profile: road_safety
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  # 'committed' (default, used by CI): build marts from the committed state x year aggregates in
+  # data/aggregates/. 'raw': rebuild those aggregates from staged record-level FARS/Census/FHWA
+  # files in data/staging/ (run `make ingest` first).
+  source_mode: committed
+  window_years: 3
+  n_peers: 5
+  ems_max_minutes: 720
+  ems_min_n_for_median: 10
+
+models:
+  road_safety:
+    staging:
+      +materialized: view
+    aggregates:
+      +materialized: table
+    marts:
+      +materialized: table
+
+seeds:
+  road_safety:
+    +quote_columns: false
+    states:
+      +column_types: {state_fips: integer, state_abbr: varchar, state_name: varchar}
+    measures:
+      +column_types: {display_order: integer}
+    published_benchmarks:
+      +column_types: {year: integer, published_value: double, tolerance: double}
+    generated:
+      actions:
+        +column_types: {default_order: integer, pdf_page: integer, stars: integer, page: varchar}
+      signal_rules:
+        +column_types: {rule_order: integer, min_n: integer}

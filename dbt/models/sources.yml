@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: staging
+    description: >-
+      Column-pruned record-level files written by `make ingest` (data/staging/, git-ignored).
+      Only read when var source_mode = 'raw'.
+    tables:
+      - name: fars_accident
+        meta: {external_location: "read_parquet('../data/staging/fars/accident/*.parquet')"}
+      - name: fars_person
+        meta: {external_location: "read_parquet('../data/staging/fars/person/*.parquet')"}
+      - name: fars_midrvacc
+        meta: {external_location: "read_parquet('../data/staging/fars/midrvacc/*.parquet')"}
+      - name: fars_acc_aux
+        meta: {external_location: "read_parquet('../data/staging/fars/acc_aux/*.parquet')"}
+      - name: fars_per_aux
+        meta: {external_location: "read_parquet('../data/staging/fars/per_aux/*.parquet')"}
+      - name: fars_veh_aux
+        meta: {external_location: "read_parquet('../data/staging/fars/veh_aux/*.parquet')"}
+      - name: population
+        meta: {external_location: "read_parquet('../data/staging/population.parquet')"}
+      - name: vmt
+        meta: {external_location: "read_parquet('../data/staging/vmt.parquet')"}
+
+  - name: committed
+    description: >-
+      Aggregated state x year tables committed to the repository (data/aggregates/). They are
+      exports of the aggregate models built in raw mode. Read when var source_mode = 'committed'.
+    tables:
+      - name: fars_state_year_counts
+        meta: {external_location: "read_csv('../data/aggregates/fars_state_year_counts.csv', header=true, auto_detect=true)"}
+      - name: fars_ems_summary
+        meta: {external_location: "read_csv('../data/aggregates/fars_ems_summary.csv', header=true, auto_detect=true)"}
+      - name: population_state_year
+        meta: {external_location: "read_csv('../data/aggregates/population_state_year.csv', header=true, auto_detect=true)"}
+      - name: vmt_state_year
+        meta: {external_location: "read_csv('../data/aggregates/vmt_state_year.csv', header=true, auto_detect=true)"}

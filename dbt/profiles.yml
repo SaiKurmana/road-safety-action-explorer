@@ -1,0 +1,8 @@
+road_safety:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      # Relative to the dbt/ directory (the Makefile runs dbt from there).
+      path: "{{ env_var('RSAE_DUCKDB_PATH', '../data/warehouse/road_safety.duckdb') }}"
+      threads: 4

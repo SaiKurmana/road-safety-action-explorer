@@ -1,0 +1,52 @@
+version: 2
+seeds:
+- name: states
+  description: 50 states + DC (FIPS) and the United States (state_fips 0).
+  columns:
+  - name: state_fips
+    data_tests:
+    - unique
+    - not_null
+- name: measures
+  description: Measure definitions (static, committed).
+  columns:
+  - name: measure_id
+    data_tests:
+    - unique
+    - not_null
+  - name: unit
+    data_tests:
+    - accepted_values:
+        arguments:
+          values:
+          - deaths
+          - minutes
+- name: published_benchmarks
+  description: NHTSA-published national figures the pipeline must reproduce.
+- name: actions
+  description: Generated from actions/actions.yaml by pipeline/yaml_to_seeds.py.
+  columns:
+  - name: action_id
+    data_tests:
+    - unique
+    - not_null
+- name: action_tags
+  description: Generated; action -> topic tag.
+- name: action_sectors
+  description: Generated; action -> lead sector.
+- name: signal_rules
+  description: Generated from actions/signal_rules.yaml.
+  columns:
+  - name: rule_id
+    data_tests:
+    - unique
+    - not_null
+- name: signal_rule_tags
+  description: Generated; rule -> tag.
+- name: source_documents
+  description: Generated from the documents section of sources.yml.
+  columns:
+  - name: source_id
+    data_tests:
+    - unique
+    - not_null

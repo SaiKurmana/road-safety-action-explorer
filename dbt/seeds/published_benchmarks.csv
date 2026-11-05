@@ -1,0 +1,3 @@
+year,measure_id,published_value,tolerance,source
+2023,fatalities_total,41025,0,"NHTSA, Traffic Safety Facts 2024 Data: Alcohol-Impaired Driving (DOT HS 813 815), PDF p. 12: 'The final fatality count in motor vehicle traffic crashes for 2023 was 41,025'"
+2023,fatalities_alcohol_impaired_driving,12382,0.5,"NHTSA, Traffic Safety Facts 2024 Data: Alcohol-Impaired Driving (DOT HS 813 815), PDF p. 12: 'The number of alcohol-impaired-driving fatalities from the 2023 Final File was 12,382'"

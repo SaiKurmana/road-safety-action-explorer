@@ -1,0 +1,171 @@
+version: 2
+models:
+- name: agg_fars_state_year_counts
+  description: FARS fatality counts by state, year, and measure (long format). state_fips 0 is the United States
+    computed directly from all records. Exported to data/aggregates/fars_state_year_counts.csv.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States (50 states + DC; Puerto Rico excluded).
+    data_tests:
+    - not_null
+  - name: year
+    description: Crash year (FARS final file).
+    data_tests:
+    - not_null
+  - name: measure_id
+    description: Measure identifier; see the measures seed for definitions.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('measures')
+          field: measure_id
+  - name: value
+    description: Number of fatalities. Alcohol-impaired-driving fatalities are the mean over NHTSA's 10 BAC imputations
+      and can therefore carry one decimal place.
+    data_tests:
+    - not_null
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 60000
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - year
+        - measure_id
+- name: agg_fars_ems_summary
+  description: EMS timing summary for fatal crashes by state (0 = U.S.) and period (each year plus the pooled signal
+    window). Exported to data/aggregates/fars_ems_summary.csv.
+  columns:
+  - name: state_fips
+    description: State FIPS code; 0 = United States.
+    data_tests:
+    - not_null
+  - name: period_label
+    description: Single year (e.g. "2023") or pooled window (e.g. "2021-2023").
+    data_tests:
+    - not_null
+  - name: n_crashes
+    description: Fatal crashes in the period.
+    data_tests:
+    - not_null
+  - name: n_crash_time_known
+    description: Crashes with a valid crash hour and minute.
+  - name: n_scene_valid
+    description: Crashes with a valid, plausible (< 720 min) interval from crash to EMS arrival at scene.
+  - name: n_scene_not_applicable
+    description: Crashes coded "not applicable or not notified" for EMS arrival (ARR_HOUR = 88).
+  - name: n_scene_implausible
+    description: Crashes whose computed crash-to-scene interval is 720 minutes or more (excluded).
+  - name: n_hospital_valid
+    description: Crashes with a valid, plausible interval from crash to EMS arrival at hospital.
+  - name: n_hospital_not_applicable
+    description: Crashes coded not applicable / not notified / not transported, terminated, or cancelled.
+  - name: n_hospital_implausible
+    description: Crashes whose computed crash-to-hospital interval is 720 minutes or more (excluded).
+  - name: median_minutes_to_scene
+    description: Median minutes from crash to EMS arrival at scene, among valid intervals.
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 120
+  - name: p90_minutes_to_scene
+    description: 90th percentile of minutes from crash to EMS arrival at scene.
+  - name: median_minutes_to_hospital
+    description: Median minutes from crash to EMS arrival at hospital, among valid intervals.
+    data_tests:
+    - value_between:
+        arguments:
+          min_value: 0
+          max_value: 240
+  - name: p90_minutes_to_hospital
+    description: 90th percentile of minutes from crash to EMS arrival at hospital.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - period_label
+- name: agg_population_state_year
+  description: Census Bureau resident population estimates (July 1) by state and year. Exported to data/aggregates/population_state_year.csv.
+  columns:
+  - name: state_fips
+    description: State FIPS code.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('states')
+          field: state_fips
+  - name: year
+    description: Estimate year (July 1).
+    data_tests:
+    - not_null
+  - name: population
+    description: Resident population estimate.
+    data_tests:
+    - not_null
+    - value_between:
+        arguments:
+          min_value: 400000
+          max_value: 45000000
+  - name: source_id
+    description: sources.yml id of the Census file the estimate came from.
+    data_tests:
+    - not_null
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - year
+- name: agg_vmt_state_year
+  description: FHWA Highway Statistics Table VM-2 vehicle miles traveled (millions) by state and year, with rural/urban
+    and functional-system totals. Exported to data/aggregates/vmt_state_year.csv.
+  columns:
+  - name: state_fips
+    description: State FIPS code.
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('states')
+          field: state_fips
+  - name: year
+    description: Data year of the Highway Statistics edition.
+    data_tests:
+    - not_null
+  - name: vmt_total_millions
+    description: Total annual VMT, millions of miles.
+    data_tests:
+    - not_null
+    - value_between:
+        arguments:
+          min_value: 1000
+          max_value: 400000
+  - name: vmt_rural_millions
+    description: Rural VMT, millions.
+  - name: vmt_urban_millions
+    description: Urban VMT, millions.
+  - name: vmt_fc_interstate_millions
+    description: Interstate VMT (rural + urban), millions.
+  - name: vmt_fc_freeway_expressway_millions
+    description: Other freeways and expressways VMT, millions.
+  - name: vmt_fc_other_principal_arterial_millions
+    description: Other principal arterial VMT, millions.
+  - name: vmt_fc_minor_arterial_millions
+    description: Minor arterial VMT, millions.
+  - name: vmt_fc_collector_millions
+    description: Major + minor collector VMT, millions.
+  - name: vmt_fc_local_millions
+    description: Local road VMT, millions.
+  data_tests:
+  - unique_combination:
+      arguments:
+        combination:
+        - state_fips
+        - year
