@@ -26,3 +26,4 @@ site/_build/
 .DS_Store
 .idea/
 .vscode/
+dbt/.user.yml
