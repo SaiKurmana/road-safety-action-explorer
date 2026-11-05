@@ -10,7 +10,7 @@ TAGLINE = (
     "A data-driven snapshot of each state's traffic fatality burden, linked to published, evidence-based "
     "Safe System countermeasures."
 )
-APP_URL = "APP_URL"  # placeholder: replace with the deployed Streamlit app URL
+APP_URL = "https://road-safety-explorer.streamlit.app/"  # Streamlit Community Cloud deployment
 REPO_URL = "https://github.com/SaiKurmana/road-safety-action-explorer"
 
 ELEMENTS = ["Safe Roads", "Safe Speeds", "Safe Vehicles", "Safe Road Users", "Post-Crash Care"]
