@@ -7,7 +7,7 @@ A fast, data-driven snapshot of each state's traffic fatality burden, linked to 
 vehicles), followed by road-user and post-crash-care strategies. Built for state public health and
 transportation practitioners.
 
-- **Interactive app:** `APP_URL` (Streamlit; runs offline from committed data)
+- **Interactive app:** <https://road-safety-explorer.streamlit.app/> (Streamlit Community Cloud; runs from committed data)
 - **Static site:** GitHub Pages: landing page, one snapshot page per state, methods, sources, action library
 
 ![Streamlit app: Montana snapshot](docs/screenshots/app_snapshot.png)

@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from explorer.content import DISCLAIMER
+from explorer.content import APP_URL, DISCLAIMER
 
 ROOT = Path(__file__).resolve().parent.parent
 EXACT = (
@@ -16,6 +16,20 @@ def test_disclaimer_text_is_exact_everywhere():
     assert EXACT in (ROOT / "README.md").read_text(encoding="utf-8")
 
 
+DEPLOYED_APP_URL = "https://road-safety-explorer.streamlit.app/"
+PLACEHOLDER = "APP_URL"  # the literal placeholder text used before the app was deployed
+
+
+def test_app_url_is_the_deployed_app():
+    assert APP_URL == DEPLOYED_APP_URL
+
+
+def test_no_app_url_placeholder_in_readme_or_docs():
+    files = [ROOT / "README.md", *sorted((ROOT / "docs").rglob("*.md"))]
+    offenders = [f.relative_to(ROOT).as_posix() for f in files if PLACEHOLDER in f.read_text(encoding="utf-8")]
+    assert not offenders, f"placeholder text {PLACEHOLDER!r} found in {offenders}"
+
+
 def test_site_builds(tmp_path, monkeypatch):
     import sitegen.build as b
 
@@ -24,9 +38,15 @@ def test_site_builds(tmp_path, monkeypatch):
     pages = list((tmp_path / "site").rglob("*.html"))
     assert len(pages) == 4 + 1 + 51  # landing, actions, methods, sources + states index + 51 states
     for p in pages:
-        assert EXACT in p.read_text(encoding="utf-8"), p.name  # footer on every page
+        html = p.read_text(encoding="utf-8")
+        assert EXACT in html, p.name  # footer on every page
+        assert PLACEHOLDER not in html, f"placeholder text {PLACEHOLDER!r} rendered in {p.name}"
+        header, footer = html.split("<main>", 1)[0], html.split("<footer", 1)[1]
+        assert f'href="{DEPLOYED_APP_URL}"' in header, p.name  # nav link to the app
+        assert f'href="{DEPLOYED_APP_URL}"' in footer, p.name  # footer link to the app
     mt = (tmp_path / "site" / "states" / "MT.html").read_text(encoding="utf-8")
     assert "What the data suggest looking at" in mt and "rosap.ntl.bts.gov" in mt
+    assert f'href="{DEPLOYED_APP_URL}?state=MT"' in mt  # state page deep-links to the app
 
 
 def test_app_runs_for_several_states():

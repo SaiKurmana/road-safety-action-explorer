@@ -26,7 +26,7 @@ Session: 45 minutes, remote with screen share, think-aloud. Incentive: [describe
 
 ## 3. Setup
 
-- App URL: [APP_URL] (or `make app` locally); site URL: [Pages URL].
+- App URL: https://road-safety-explorer.streamlit.app/ (or `make app` locally); site URL: [Pages URL].
 - Start each session on the app with the sidebar visible, and the state picker set to a state that is
   **not** the participant's own.
 - Recording consent obtained; note-taker present; timer running per task.
