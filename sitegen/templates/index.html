@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ C.PROJECT }}</h1>
+<p class="lead">{{ C.TAGLINE }} Built for state public health and transportation practitioners. It describes the data and points to published resources; it does not tell states what to do.</p>
+<p><a href="{{ C.APP_URL }}"><strong>Open the interactive app</strong></a> · <a href="states/index.html">Browse static state snapshots</a> · <a href="actions.html">Action library</a></p>
+<div class="notice disclaimer">{{ C.DISCLAIMER }}</div>
+
+<h2>The problem</h2>
+<div class="grid kpis">
+  <div class="card kpi"><div class="label">Traffic deaths, {{ us.latest_year }}</div><div class="value">{{ "{:,.0f}".format(us.latest_count) }}</div><div class="sub">50 states + DC, NHTSA FARS final file</div></div>
+  <div class="card kpi"><div class="label">Traffic deaths, {{ years[0] }}-{{ years[-1] }}</div><div class="value">{{ "{:,.0f}".format(us.total_10y) }}</div><div class="sub">ten final FARS years</div></div>
+  <div class="card kpi"><div class="label">Deaths per 100,000, {{ us.window }}</div><div class="value">{{ "%.1f"|format(us.rate) }}</div><div class="sub">state rates range {{ "%.1f"|format(us.min_rate) }} to {{ "%.1f"|format(us.max_rate) }}</div></div>
+  <div class="card kpi"><div class="label">Change vs {{ us.prior_window }}</div><div class="value">{{ "%+.1f"|format(us.pct_change) }}%</div><div class="sub">U.S. rate per 100,000</div></div>
+</div>
+<p>The same data show very different patterns across states: who dies (pedestrians, motorcyclists, unrestrained occupants), where (rural roads, roadway departures), and how long it takes to reach care. Practitioners need a quick, transparent way to see their state's pattern and to find the published evidence that addresses it.</p>
+
+<h2>The Safe System approach, in brief</h2>
+<p>The U.S. DOT <a href="{{ nrss_url }}">National Roadway Safety Strategy</a> (2022) adopts the Safe System Approach, which "acknowledges both human mistakes and human vulnerability, and designs a redundant system to protect everyone" (NRSS p. 6). Its five objectives (NRSS p. 11, paraphrased):</p>
+<div class="grid five">
+  <div class="card"><strong>Safe Roads</strong><p class="muted">Roadway design that accounts for mistakes and injury tolerances.</p></div>
+  <div class="card"><strong>Safe Speeds</strong><p class="muted">Safer speeds through context-appropriate design, outreach, and enforcement.</p></div>
+  <div class="card"><strong>Safe Vehicles</strong><p class="muted">Vehicle systems that prevent crashes and protect people inside and outside.</p></div>
+  <div class="card"><strong>Safe Road Users</strong><p class="muted">Safe, responsible behavior by everyone using the road.</p></div>
+  <div class="card"><strong>Post-Crash Care</strong><p class="muted">Fast access to emergency medical care and safe incident management.</p></div>
+</div>
+<p class="muted">This tool lists upstream, system-level resources (roads, speeds, vehicles) first, then road-user strategies, then post-crash care.</p>
+
+<h2>How it works</h2>
+<div class="arch" role="img" aria-label="Pipeline: public sources, verified ingest, dbt transformation and tests, committed aggregates, signal rules, and app and site outputs">
+  <div class="box"><div class="step">1 · Sources</div><h4>Public data</h4><p>NHTSA FARS final bulk files, Census population estimates, FHWA VM-2 VMT. URLs + checksums in sources.yml.</p></div>
+  <div class="box"><div class="step">2 · Ingest</div><h4>Verify &amp; stage</h4><p>Python discovers files from NHTSA's listing, checks size/MD5/SHA-256, stages columns to Parquet.</p></div>
+  <div class="box"><div class="step">3 · Transform</div><h4>DuckDB + dbt</h4><p>State × year measures, rates, peers, EMS times; tests reconcile states with national totals and NHTSA benchmarks.</p></div>
+  <div class="box"><div class="step">4 · Rules</div><h4>Signals → resources</h4><p>Fixed YAML rules compare each state with the median of states and link tagged, cited resources.</p></div>
+  <div class="box"><div class="step">5 · Outputs</div><h4>App &amp; site</h4><p>Streamlit app and this static site, both read the committed aggregates (no raw data, no AI).</p></div>
+</div>
+
+<h2>Example: {{ ex.name }}</h2>
+<div class="grid two">
+  <div class="card"><div class="chart-scroll">{{ ex_trend }}</div><p class="muted">All traffic fatalities per 100,000 population. Hover a point for values; full table on the state page.</p></div>
+  <div class="card">
+    <p><strong>{{ ex_trig|length }} of {{ ex_nrules }} signals</strong> in {{ ex.window_label }}:</p>
+    <ul>{% for r in ex_trig %}<li>{{ r.label }}</li>{% endfor %}</ul>
+    <p><a href="states/{{ ex.abbr }}.html">See the full {{ ex.name }} snapshot →</a></p>
+  </div>
+</div>
+
+<h2>How signals map to resources</h2>
+<p>{{ C.SIGNAL_EXPLAINER }}</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rule</th><th>Compares</th><th>Shows resources tagged</th><th class="num">Resources</th><th class="num">States triggered</th></tr></thead>
+<tbody>{% for r in rules %}<tr><td>{{ r.label }}</td><td>{{ r.metric_label }} vs {{ r.comparator_label }} ({{ ex.window_label }}); min. {{ r.min_n }} records</td><td>{{ r.tags }}</td><td class="num">{{ r.n_actions }}</td><td class="num">{{ r.n_states }}</td></tr>{% endfor %}</tbody>
+</table></div>
+
+<h2>Limitations</h2>
+<ul>{% for l in C.LIMITATIONS_SHORT %}<li>{{ l }}</li>{% endfor %}</ul>
+<p><a href="methods.html">Methods</a> · <a href="sources.html">Sources</a></p>
+{% endblock %}

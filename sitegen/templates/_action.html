@@ -1,0 +1,7 @@
+<div class="action">
+  <div><span class="title">{{ a.title }}</span> — <span class="rating">{{ a.rating }}</span></div>
+  <div class="meta">{{ PREV[a.prevention_level] }} · {{ a.safe_system_element }} · Lead sectors (generic roles): {{ a.lead_sectors }}</div>
+  <div class="meta">Source: <a href="{{ a.source_url }}">{{ SRC[a.source_id] }}, {{ a.page }}</a>{% if a.rating_status == 'published' and a.stars %} · Rating definition (source): “{{ a.rating_definition }}”{% endif %}</div>
+  {% if a.evidence_detail %}<div class="benefit">Published safety benefits / objective (verbatim): “{{ a.evidence_detail }}”</div>{% endif %}
+  {% if a.triggered_by_rules %}<div class="meta">Linked by rule: {{ a.triggered_by_rules }}</div>{% endif %}
+</div>

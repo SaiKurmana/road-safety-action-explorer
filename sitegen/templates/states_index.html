@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>State snapshots</h1>
+<p class="lead">A static one-page snapshot for each state and DC, built from the same committed data as the interactive app.</p>
+<ul class="states">{% for s in states %}<li><a href="{{ s.state_abbr }}.html">{{ s.state_name }}</a> <span class="muted">{{ s.n_trig }} signals</span></li>{% endfor %}</ul>
+{% endblock %}

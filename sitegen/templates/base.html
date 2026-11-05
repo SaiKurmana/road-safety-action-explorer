@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+<script src="{{ root }}static/site.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="{{ root }}index.html">{{ C.PROJECT }}</a>
+  <nav aria-label="Site">
+    <a href="{{ root }}index.html" {% if nav == 'home' %}aria-current="page"{% endif %}>Overview</a>
+    <a href="{{ root }}states/index.html" {% if nav == 'states' %}aria-current="page"{% endif %}>State snapshots</a>
+    <a href="{{ root }}actions.html" {% if nav == 'actions' %}aria-current="page"{% endif %}>Action library</a>
+    <a href="{{ root }}methods.html" {% if nav == 'methods' %}aria-current="page"{% endif %}>Methods</a>
+    <a href="{{ root }}sources.html" {% if nav == 'sources' %}aria-current="page"{% endif %}>Sources</a>
+    <a href="{{ C.APP_URL }}">Interactive app</a>
+  </nav>
+  <button id="theme-toggle" type="button">Dark mode</button>
+</div></header>
+<main><div class="wrap">
+{% block content %}{% endblock %}
+</div></main>
+<footer class="site"><div class="wrap">
+  <p class="disclaimer"><strong>{{ C.DISCLAIMER }}</strong></p>
+  <p>By {{ C.AUTHOR }} · Data: NHTSA FARS final files {{ years[0] }}-{{ years[-1] }}, U.S. Census Bureau population estimates, FHWA Highway Statistics VM-2 ·
+  <a href="{{ C.REPO_URL }}">Source code</a> · <a href="{{ root }}methods.html#limitations">Limitations</a></p>
+</div></footer>
+</body>
+</html>
