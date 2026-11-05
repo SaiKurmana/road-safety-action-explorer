@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Lint, tests, dbt build on committed aggregates, site build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Ruff (lint + format check)
+        run: make lint
+      - name: dbt build on committed aggregates + rebuild-equality check
+        run: make dbt-test
+      - name: Pytest
+        run: make pytest
+      - name: Build static site
+        run: make site
+      - name: Upload site preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: site/_build
+          retention-days: 7
