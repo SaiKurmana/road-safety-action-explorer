@@ -448,23 +448,23 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 8,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 8,ctw11-06-strategies-to-increase-rider-conspicuity-and-use-of-protective-clothing,106,Safe Road Users,individual_behavior,motorcyclist_rate
 10,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt
-10,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-corridor-access-management,3,Safe Roads,primary_upstream,intersection_rate_vmt
-10,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-dedicated-left-and-right-turn-lanes-at-intersections,5,Safe Roads,primary_upstream,intersection_rate_vmt
-10,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-lighting,8,Safe Roads,primary_upstream,total_rate_vmt
 10,psc-local-road-safety-plans,9,Safe Roads,primary_upstream,total_rate_vmt
-10,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-pavement-friction-management,13,Safe Roads,primary_upstream,total_rate_vmt
-10,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
-10,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedestrian_rate
+10,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-reduced-left-turn-conflict-intersections,16,Safe Roads,primary_upstream,intersection_rate_vmt
-10,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-road-safety-audit,18,Safe Roads,primary_upstream,total_rate_vmt
 10,psc-roundabouts,20,Safe Roads,primary_upstream,intersection_rate_vmt
 10,psc-systemic-application-of-multiple-low-cost-countermeasures-at-stop-controlled-intersections,22,Safe Roads,primary_upstream,intersection_rate_vmt
-10,psc-walkways,23,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+10,psc-walkways,23,Safe Roads,primary_upstream,pedestrian_rate
 10,psc-yellow-change-intervals,25,Safe Roads,primary_upstream,intersection_rate_vmt
 10,ctw11-04-dynamic-speed-display-feedback-signs,26,Safe Speeds,primary_upstream,speeding_rate
 10,ctw11-04-lower-speed-limits,27,Safe Speeds,primary_upstream,speeding_rate
@@ -472,7 +472,7 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 10,ctw11-04-high-visibility-enforcement,29,Safe Speeds,primary_upstream,speeding_rate
 10,ctw11-04-increasing-penalties,30,Safe Speeds,primary_upstream,speeding_rate
 10,ctw11-09-lower-speed-limits,31,Safe Speeds,primary_upstream,pedestrian_rate; speeding_rate
-10,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,pedalcyclist_rate; speeding_rate
+10,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,speeding_rate
 10,ctw11-04-intelligent-speed-assistance,33,Safe Speeds,primary_upstream,speeding_rate
 10,ctw11-04-variable-speed-limits,34,Safe Speeds,primary_upstream,speeding_rate
 10,psc-appropriate-speed-limits-for-all-road-users,35,Safe Speeds,primary_upstream,speeding_rate
@@ -506,20 +506,14 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 10,ctw11-01-alcohol-impaired-driving-law-review,71,Safe Road Users,individual_behavior,alcohol_rate
 10,ctw11-01-alternative-transportation,72,Safe Road Users,individual_behavior,alcohol_rate
 10,ctw11-01-bac-test-refusal-penalties,73,Safe Road Users,individual_behavior,alcohol_rate
-10,ctw11-10-bicycle-helmet-laws-for-children,74,Safe Road Users,individual_behavior,pedalcyclist_rate
 10,ctw11-07-electronic-technology-for-parental-guardian-monitoring,76,Safe Road Users,individual_behavior,young_driver_rate
 10,ctw11-09-elementary-age-child-pedestrian-training,77,Safe Road Users,individual_behavior,pedestrian_rate
 10,ctw11-01-high-bac-sanctions,79,Safe Road Users,individual_behavior,alcohol_rate
 10,ctw11-09-high-visibility-enforcement-at-pedestrian-crossings,80,Safe Road Users,individual_behavior,pedestrian_rate
 10,ctw11-01-integrated-enforcement,81,Safe Road Users,individual_behavior,alcohol_rate
 10,ctw11-01-limits-on-diversion-plea-agreements,82,Safe Road Users,individual_behavior,alcohol_rate
-10,ctw11-10-promote-bicycle-helmet-use-with-education,84,Safe Road Users,individual_behavior,pedalcyclist_rate
 10,ctw11-09-safe-routes-to-school,85,Safe Road Users,individual_behavior,pedestrian_rate
-10,ctw11-10-safe-routes-to-school,86,Safe Road Users,individual_behavior,pedalcyclist_rate
-10,ctw11-10-universal-bicycle-helmet-laws,88,Safe Road Users,individual_behavior,pedalcyclist_rate
 10,ctw11-01-zero-tolerance-law-enforcement,89,Safe Road Users,individual_behavior,alcohol_rate
-10,ctw11-10-active-lighting-laws,90,Safe Road Users,individual_behavior,pedalcyclist_rate
-10,ctw11-10-bicycle-safety-education-for-children,91,Safe Road Users,individual_behavior,pedalcyclist_rate
 10,ctw11-09-conspicuity-enhancement,92,Safe Road Users,individual_behavior,pedestrian_rate
 10,ctw11-01-court-monitoring,93,Safe Road Users,individual_behavior,alcohol_rate
 10,ctw11-07-enforcement-of-gdl,94,Safe Road Users,individual_behavior,young_driver_rate
@@ -531,40 +525,29 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 10,ctw11-06-motorcycle-rider-training,100,Safe Road Users,individual_behavior,motorcyclist_rate
 10,ctw11-07-programs-to-assist-parents-guardians-of-young-drivers,102,Safe Road Users,individual_behavior,young_driver_rate
 10,ctw11-09-walking-school-buses,103,Safe Road Users,individual_behavior,pedestrian_rate
-10,ctw11-10-cycling-skills-clinics-bike-fairs-bike-rodeos,104,Safe Road Users,individual_behavior,pedalcyclist_rate
-10,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 10,ctw11-06-strategies-to-increase-rider-conspicuity-and-use-of-protective-clothing,106,Safe Road Users,individual_behavior,motorcyclist_rate
 11,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt
-11,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+11,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedestrian_rate
 11,psc-corridor-access-management,3,Safe Roads,primary_upstream,intersection_rate_vmt
-11,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+11,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedestrian_rate
 11,psc-dedicated-left-and-right-turn-lanes-at-intersections,5,Safe Roads,primary_upstream,intersection_rate_vmt
-11,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
-11,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
-11,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
-11,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+11,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedestrian_rate
+11,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedestrian_rate
+11,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedestrian_rate
+11,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedestrian_rate
 11,psc-reduced-left-turn-conflict-intersections,16,Safe Roads,primary_upstream,intersection_rate_vmt
-11,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+11,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedestrian_rate
 11,psc-roundabouts,20,Safe Roads,primary_upstream,intersection_rate_vmt
 11,psc-systemic-application-of-multiple-low-cost-countermeasures-at-stop-controlled-intersections,22,Safe Roads,primary_upstream,intersection_rate_vmt
-11,psc-walkways,23,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
+11,psc-walkways,23,Safe Roads,primary_upstream,pedestrian_rate
 11,psc-yellow-change-intervals,25,Safe Roads,primary_upstream,intersection_rate_vmt
 11,ctw11-09-lower-speed-limits,31,Safe Speeds,primary_upstream,pedestrian_rate
-11,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,pedalcyclist_rate
 11,ctw11-09-pedestrian-safety-zones,67,Safe Road Users,individual_behavior,pedestrian_rate
-11,ctw11-10-bicycle-helmet-laws-for-children,74,Safe Road Users,individual_behavior,pedalcyclist_rate
 11,ctw11-09-elementary-age-child-pedestrian-training,77,Safe Road Users,individual_behavior,pedestrian_rate
 11,ctw11-09-high-visibility-enforcement-at-pedestrian-crossings,80,Safe Road Users,individual_behavior,pedestrian_rate
-11,ctw11-10-promote-bicycle-helmet-use-with-education,84,Safe Road Users,individual_behavior,pedalcyclist_rate
 11,ctw11-09-safe-routes-to-school,85,Safe Road Users,individual_behavior,pedestrian_rate
-11,ctw11-10-safe-routes-to-school,86,Safe Road Users,individual_behavior,pedalcyclist_rate
-11,ctw11-10-universal-bicycle-helmet-laws,88,Safe Road Users,individual_behavior,pedalcyclist_rate
-11,ctw11-10-active-lighting-laws,90,Safe Road Users,individual_behavior,pedalcyclist_rate
-11,ctw11-10-bicycle-safety-education-for-children,91,Safe Road Users,individual_behavior,pedalcyclist_rate
 11,ctw11-09-conspicuity-enhancement,92,Safe Road Users,individual_behavior,pedestrian_rate
 11,ctw11-09-walking-school-buses,103,Safe Road Users,individual_behavior,pedestrian_rate
-11,ctw11-10-cycling-skills-clinics-bike-fairs-bike-rodeos,104,Safe Road Users,individual_behavior,pedalcyclist_rate
-11,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 12,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt
 12,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedestrian_rate; pedalcyclist_rate
 12,psc-corridor-access-management,3,Safe Roads,primary_upstream,intersection_rate_vmt
@@ -724,54 +707,28 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 13,ctw11-07-programs-to-assist-parents-guardians-of-young-drivers,102,Safe Road Users,individual_behavior,young_driver_rate
 13,ctw11-09-walking-school-buses,103,Safe Road Users,individual_behavior,pedestrian_rate
 13,nrss-post-crash-care,107,Post-Crash Care,post_crash,ems_time_to_hospital
-15,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedalcyclist_rate
-15,psc-walkways,23,Safe Roads,primary_upstream,pedalcyclist_rate
-15,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,pedalcyclist_rate
 15,ctw11-06-universal-motorcycle-helmet-use-laws,54,Safe Road Users,individual_behavior,motorcyclist_rate
 15,ctw11-06-alcohol-impaired-motorcyclists-detection-enforcement-and-sanctions,70,Safe Road Users,individual_behavior,motorcyclist_rate
-15,ctw11-10-bicycle-helmet-laws-for-children,74,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-promote-bicycle-helmet-use-with-education,84,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-safe-routes-to-school,86,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-universal-bicycle-helmet-laws,88,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-active-lighting-laws,90,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-bicycle-safety-education-for-children,91,Safe Road Users,individual_behavior,pedalcyclist_rate
 15,ctw11-06-gdl-for-motorcyclists,95,Safe Road Users,individual_behavior,motorcyclist_rate
 15,ctw11-06-motorcycle-rider-training,100,Safe Road Users,individual_behavior,motorcyclist_rate
-15,ctw11-10-cycling-skills-clinics-bike-fairs-bike-rodeos,104,Safe Road Users,individual_behavior,pedalcyclist_rate
-15,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 15,ctw11-06-strategies-to-increase-rider-conspicuity-and-use-of-protective-clothing,106,Safe Road Users,individual_behavior,motorcyclist_rate
 16,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt
-16,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-corridor-access-management,3,Safe Roads,primary_upstream,intersection_rate_vmt
-16,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-dedicated-left-and-right-turn-lanes-at-intersections,5,Safe Roads,primary_upstream,intersection_rate_vmt
 16,psc-enhanced-delineation-for-horizontal-curves,6,Safe Roads,primary_upstream,roadway_departure_rate_vmt
-16,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-lighting,8,Safe Roads,primary_upstream,total_rate_vmt
 16,psc-local-road-safety-plans,9,Safe Roads,primary_upstream,total_rate_vmt
 16,psc-longitudinal-rumble-strips-and-stripes-on-two-lane-roads,10,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 16,psc-median-barriers,11,Safe Roads,primary_upstream,roadway_departure_rate_vmt
-16,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-pavement-friction-management,13,Safe Roads,primary_upstream,total_rate_vmt
-16,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedalcyclist_rate
-16,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-reduced-left-turn-conflict-intersections,16,Safe Roads,primary_upstream,intersection_rate_vmt
-16,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-road-safety-audit,18,Safe Roads,primary_upstream,total_rate_vmt
 16,psc-roadside-design-improvements-at-curves,19,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 16,psc-roundabouts,20,Safe Roads,primary_upstream,intersection_rate_vmt
 16,psc-safetyedge,21,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 16,psc-systemic-application-of-multiple-low-cost-countermeasures-at-stop-controlled-intersections,22,Safe Roads,primary_upstream,intersection_rate_vmt
-16,psc-walkways,23,Safe Roads,primary_upstream,pedalcyclist_rate
 16,psc-wider-edge-lines,24,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 16,psc-yellow-change-intervals,25,Safe Roads,primary_upstream,intersection_rate_vmt
-16,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,pedalcyclist_rate
 16,ctw11-07-gdl-intermediate-license-nighttime-restrictions,43,Safe Road Users,individual_behavior,young_driver_rate
 16,ctw11-07-gdl-intermediate-license-passenger-restrictions,44,Safe Road Users,individual_behavior,young_driver_rate
 16,ctw11-07-gdl-learners-permit,45,Safe Road Users,individual_behavior,young_driver_rate
@@ -783,23 +740,15 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 16,ctw11-03-enforcement-based-communication-strategies-for-low-belt-use-groups,58,Safe Road Users,individual_behavior,unrestrained_rate
 16,ctw11-03-increased-fines-for-seat-belt-law-violations,61,Safe Road Users,individual_behavior,unrestrained_rate
 16,ctw11-03-nighttime-high-visibility-seat-belt-law-enforcement,66,Safe Road Users,individual_behavior,unrestrained_rate
-16,ctw11-10-bicycle-helmet-laws-for-children,74,Safe Road Users,individual_behavior,pedalcyclist_rate
 16,ctw11-03-child-restraint-inspection-stations,75,Safe Road Users,individual_behavior,unrestrained_rate
 16,ctw11-07-electronic-technology-for-parental-guardian-monitoring,76,Safe Road Users,individual_behavior,young_driver_rate
 16,ctw11-03-employer-based-programs,78,Safe Road Users,individual_behavior,unrestrained_rate
 16,ctw11-03-programs-for-older-children,83,Safe Road Users,individual_behavior,unrestrained_rate
-16,ctw11-10-promote-bicycle-helmet-use-with-education,84,Safe Road Users,individual_behavior,pedalcyclist_rate
-16,ctw11-10-safe-routes-to-school,86,Safe Road Users,individual_behavior,pedalcyclist_rate
 16,ctw11-03-sustained-seat-belt-enforcement,87,Safe Road Users,individual_behavior,unrestrained_rate
-16,ctw11-10-universal-bicycle-helmet-laws,88,Safe Road Users,individual_behavior,pedalcyclist_rate
-16,ctw11-10-active-lighting-laws,90,Safe Road Users,individual_behavior,pedalcyclist_rate
-16,ctw11-10-bicycle-safety-education-for-children,91,Safe Road Users,individual_behavior,pedalcyclist_rate
 16,ctw11-07-enforcement-of-gdl,94,Safe Road Users,individual_behavior,young_driver_rate
 16,ctw11-07-hazard-perception-training,96,Safe Road Users,individual_behavior,young_driver_rate
 16,ctw11-03-programs-for-increasing-child-restraint-and-booster-seat-use,101,Safe Road Users,individual_behavior,unrestrained_rate
 16,ctw11-07-programs-to-assist-parents-guardians-of-young-drivers,102,Safe Road Users,individual_behavior,young_driver_rate
-16,ctw11-10-cycling-skills-clinics-bike-fairs-bike-rodeos,104,Safe Road Users,individual_behavior,pedalcyclist_rate
-16,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 17,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt
 17,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedalcyclist_rate
 17,psc-corridor-access-management,3,Safe Roads,primary_upstream,intersection_rate_vmt
@@ -1392,23 +1341,15 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 29,ctw11-09-walking-school-buses,103,Safe Road Users,individual_behavior,pedestrian_rate
 29,ctw11-06-strategies-to-increase-rider-conspicuity-and-use-of-protective-clothing,106,Safe Road Users,individual_behavior,motorcyclist_rate
 29,nrss-post-crash-care,107,Post-Crash Care,post_crash,ems_time_to_hospital
-30,psc-bicycle-lanes,2,Safe Roads,primary_upstream,pedalcyclist_rate
-30,psc-crosswalk-visibility-enhancements,4,Safe Roads,primary_upstream,pedalcyclist_rate
 30,psc-enhanced-delineation-for-horizontal-curves,6,Safe Roads,primary_upstream,roadway_departure_rate_vmt
-30,psc-leading-pedestrian-interval,7,Safe Roads,primary_upstream,pedalcyclist_rate
 30,psc-lighting,8,Safe Roads,primary_upstream,total_rate_vmt
 30,psc-local-road-safety-plans,9,Safe Roads,primary_upstream,total_rate_vmt
 30,psc-longitudinal-rumble-strips-and-stripes-on-two-lane-roads,10,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 30,psc-median-barriers,11,Safe Roads,primary_upstream,roadway_departure_rate_vmt
-30,psc-medians-and-pedestrian-refuge-islands-in-urban-and-suburban-areas,12,Safe Roads,primary_upstream,pedalcyclist_rate
 30,psc-pavement-friction-management,13,Safe Roads,primary_upstream,total_rate_vmt
-30,psc-pedestrian-hybrid-beacons,14,Safe Roads,primary_upstream,pedalcyclist_rate
-30,psc-rectangular-rapid-flashing-beacons-rrfb,15,Safe Roads,primary_upstream,pedalcyclist_rate
-30,psc-road-diets-roadway-reconfiguration,17,Safe Roads,primary_upstream,pedalcyclist_rate
 30,psc-road-safety-audit,18,Safe Roads,primary_upstream,total_rate_vmt
 30,psc-roadside-design-improvements-at-curves,19,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 30,psc-safetyedge,21,Safe Roads,primary_upstream,roadway_departure_rate_vmt
-30,psc-walkways,23,Safe Roads,primary_upstream,pedalcyclist_rate
 30,psc-wider-edge-lines,24,Safe Roads,primary_upstream,roadway_departure_rate_vmt
 30,ctw11-04-dynamic-speed-display-feedback-signs,26,Safe Speeds,primary_upstream,speeding_rate
 30,ctw11-04-lower-speed-limits,27,Safe Speeds,primary_upstream,speeding_rate
@@ -1416,7 +1357,7 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 30,ctw11-04-high-visibility-enforcement,29,Safe Speeds,primary_upstream,speeding_rate
 30,ctw11-04-increasing-penalties,30,Safe Speeds,primary_upstream,speeding_rate
 30,ctw11-09-lower-speed-limits,31,Safe Speeds,primary_upstream,speeding_rate
-30,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,pedalcyclist_rate; speeding_rate
+30,ctw11-10-lower-speed-limits,32,Safe Speeds,primary_upstream,speeding_rate
 30,ctw11-04-intelligent-speed-assistance,33,Safe Speeds,primary_upstream,speeding_rate
 30,ctw11-04-variable-speed-limits,34,Safe Speeds,primary_upstream,speeding_rate
 30,psc-appropriate-speed-limits-for-all-road-users,35,Safe Speeds,primary_upstream,speeding_rate
@@ -1456,7 +1397,6 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 30,ctw11-01-alcohol-impaired-driving-law-review,71,Safe Road Users,individual_behavior,alcohol_rate
 30,ctw11-01-alternative-transportation,72,Safe Road Users,individual_behavior,alcohol_rate
 30,ctw11-01-bac-test-refusal-penalties,73,Safe Road Users,individual_behavior,alcohol_rate
-30,ctw11-10-bicycle-helmet-laws-for-children,74,Safe Road Users,individual_behavior,pedalcyclist_rate
 30,ctw11-03-child-restraint-inspection-stations,75,Safe Road Users,individual_behavior,unrestrained_rate
 30,ctw11-07-electronic-technology-for-parental-guardian-monitoring,76,Safe Road Users,individual_behavior,young_driver_rate
 30,ctw11-03-employer-based-programs,78,Safe Road Users,individual_behavior,unrestrained_rate
@@ -1464,13 +1404,8 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 30,ctw11-01-integrated-enforcement,81,Safe Road Users,individual_behavior,alcohol_rate
 30,ctw11-01-limits-on-diversion-plea-agreements,82,Safe Road Users,individual_behavior,alcohol_rate
 30,ctw11-03-programs-for-older-children,83,Safe Road Users,individual_behavior,unrestrained_rate
-30,ctw11-10-promote-bicycle-helmet-use-with-education,84,Safe Road Users,individual_behavior,pedalcyclist_rate
-30,ctw11-10-safe-routes-to-school,86,Safe Road Users,individual_behavior,pedalcyclist_rate
 30,ctw11-03-sustained-seat-belt-enforcement,87,Safe Road Users,individual_behavior,unrestrained_rate
-30,ctw11-10-universal-bicycle-helmet-laws,88,Safe Road Users,individual_behavior,pedalcyclist_rate
 30,ctw11-01-zero-tolerance-law-enforcement,89,Safe Road Users,individual_behavior,alcohol_rate
-30,ctw11-10-active-lighting-laws,90,Safe Road Users,individual_behavior,pedalcyclist_rate
-30,ctw11-10-bicycle-safety-education-for-children,91,Safe Road Users,individual_behavior,pedalcyclist_rate
 30,ctw11-01-court-monitoring,93,Safe Road Users,individual_behavior,alcohol_rate
 30,ctw11-07-enforcement-of-gdl,94,Safe Road Users,individual_behavior,young_driver_rate
 30,ctw11-06-gdl-for-motorcyclists,95,Safe Road Users,individual_behavior,motorcyclist_rate
@@ -1481,8 +1416,6 @@ state_fips,action_id,default_order,safe_system_element,prevention_level,triggere
 30,ctw11-06-motorcycle-rider-training,100,Safe Road Users,individual_behavior,motorcyclist_rate
 30,ctw11-03-programs-for-increasing-child-restraint-and-booster-seat-use,101,Safe Road Users,individual_behavior,unrestrained_rate
 30,ctw11-07-programs-to-assist-parents-guardians-of-young-drivers,102,Safe Road Users,individual_behavior,young_driver_rate
-30,ctw11-10-cycling-skills-clinics-bike-fairs-bike-rodeos,104,Safe Road Users,individual_behavior,pedalcyclist_rate
-30,ctw11-10-motorist-passing-bicyclist-laws,105,Safe Road Users,individual_behavior,pedalcyclist_rate
 30,ctw11-06-strategies-to-increase-rider-conspicuity-and-use-of-protective-clothing,106,Safe Road Users,individual_behavior,motorcyclist_rate
 30,nrss-post-crash-care,107,Post-Crash Care,post_crash,ems_time_to_hospital
 31,psc-backplates-with-retroreflective-borders,1,Safe Roads,primary_upstream,intersection_rate_vmt

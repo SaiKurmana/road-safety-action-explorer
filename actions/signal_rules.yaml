@@ -19,6 +19,11 @@ metrics:
   rate_per_100m_vmt: Fatalities per 100 million vehicle miles traveled (pooled window).
   median_minutes: Median minutes from crash to the EMS milestone, among fatal crashes with valid recorded times.
 
+min_n: >-
+  A rule is evaluated only when enough records stand behind the state's value: at least 20 deaths in the
+  window for rate rules (rates on fewer deaths are statistically unstable), and at least 30 crashes with
+  valid EMS times for the post-crash rule. Otherwise the rule is shown as "not evaluated".
+
 # Person-type and behavior measures use population (a population-health framing); road-system
 # measures (total, roadway departure, intersection) use travel (VMT) as the exposure.
 rules:
@@ -28,6 +33,7 @@ rules:
     metric: rate_per_100m_vmt
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [crosscutting]
   - id: pedestrian_rate
     label: Pedestrian fatality rate
@@ -35,6 +41,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [pedestrian]
   - id: pedalcyclist_rate
     label: Bicyclist (pedalcyclist) fatality rate
@@ -42,6 +49,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [bicycle]
   - id: motorcyclist_rate
     label: Motorcyclist fatality rate
@@ -49,6 +57,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [motorcycle]
   - id: speeding_rate
     label: Speeding-related fatality rate
@@ -56,6 +65,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [speed]
   - id: alcohol_rate
     label: Alcohol-impaired-driving fatality rate
@@ -63,6 +73,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [alcohol]
   - id: unrestrained_rate
     label: Unrestrained passenger-vehicle occupant fatality rate
@@ -70,6 +81,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [occupant_protection]
   - id: young_driver_rate
     label: Fatalities in crashes involving a young driver (15-20)
@@ -77,6 +89,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [young_driver]
   - id: older_driver_rate
     label: Fatalities in crashes involving an older driver (65+)
@@ -84,6 +97,7 @@ rules:
     metric: rate_per_100k
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [older_driver]
   - id: roadway_departure_rate_vmt
     label: Roadway-departure fatality rate per mile traveled
@@ -91,6 +105,7 @@ rules:
     metric: rate_per_100m_vmt
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [roadway_departure]
   - id: intersection_rate_vmt
     label: Intersection-related fatality rate per mile traveled
@@ -98,6 +113,7 @@ rules:
     metric: rate_per_100m_vmt
     comparator: state_median
     operator: above
+    min_n: 20
     show_tags: [intersection]
   - id: ems_time_to_hospital
     label: Time from crash to hospital arrival (median)
