@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Raw and intermediate data are fetched/built at build time and never committed
+data/raw/
+data/staging/
+data/warehouse/
+*.duckdb
+*.duckdb.wal
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+logs/
+dbt/seeds/generated/
+
+# Site build output (deployed by CI, not committed)
+site/_build/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
